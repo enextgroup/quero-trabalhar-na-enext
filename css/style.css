@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,400i,700|Oswald:300,400,700');
+
+*,html{
+    margin:0;
+}
+
+button{
+    background: #d73a1e;
+    border: 0px;
+    padding:10px;
+    width:110px;
+    margin:10px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+input{
+    border: 1px solid #333333;
+    border-radius:5px;
+    padding:10px;
+}
+
+/**** HEADER ****/
+header>div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header>div.left{
+    float:left;
+    margin-left: 40px;
+}
+header>div.right{
+    float:right;
+    margin-right: 40px;
+}
+header div>div{
+    padding: 20px 10px;
+}
+header .brand{
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color:#d33800;
+}
+header .brand span{
+    font-weight: 300;
+}
+header .slogan{
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    color:#553e72;
+    position: relative;
+    padding:0 35px;
+}
+header .slogan:before{
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    top: 45%;
+    left: 0;
+    height: 1px;
+    width: 30px;
+    background: #4f336d;
+}
+header .slogan:after{
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    top: 45%;
+    right: 0;
+    height: 1px;
+    width: 30px;
+    background: #4f336d;
+}
+header .search{
+    margin-left: 10px;
+}
+header input{
+    width: 220px;
+    background: url(../assets/search.png) no-repeat center left;
+    padding-left: 35px;
+    background-position-x: 5px;
+}
+header p.shipping{
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #d73a1e;
+}
+header p.shipping span{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;   
+}
+header .bag{
+    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    color:#b3b3c3;
+}
+header .bag span{
+    font-weight: 700;
+    color:#d73a1e;
+}
+nav ul{
+    list-style: none;
+    display: inline;
+}
+header #open-menu{
+    padding:0;
+}
+header #header-nav{
+    display: block;
+}
+header nav{
+    clear: both;
+    background:#523468;
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+header nav li{
+    display: inline;
+    margin-right: 20px;
+}
+header nav a{
+    position: relative;
+    color:#fff;
+    text-decoration: none;
+    padding: 26px 16px;
+    display: inline-block;
+}
+header nav a:hover{
+    color: #ac8eb8;
+}
+header nav .drop-down a:after{
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: inherit;
+    top: 45%;
+    margin-left: 10px;
+}
+header nav a.active{
+    background: #422a53;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+header nav .nav-right{
+    float:right;
+    margin-right: 40px;
+}
+header nav .nav-right li{
+    margin-right: 0;
+}
+header nav span{
+    color:#ac8eb8;
+}
+
+
+/**** SECTION ****/
+section{
+    font-family: 'Droid Serif', serif;
+    margin: 40px;
+    clear: both;
+}
+section h2{
+    font-size: 20px;
+    margin-bottom:40px;
+}
+section #products{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+section #products>figure{
+    font-weight: bold;
+    font-size: 14px;
+    width: calc(100% / 3);
+    margin: 40px 0;
+    display: inline-block;
+}
+section figure img{
+    max-width: 200px;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+section figure img:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+}
+section figure span{
+    color: #d73a1e;
+    font-weight: 400;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+#close-lightbox1,#close-lightbox2,#close-lightbox3,#close-lightbox4,#close-lightbox5,#close-lightbox6{
+    color: #000;
+    text-decoration: none;
+    line-height: 1.3;
+    padding: 5px 10px;
+    position: inherit;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Droid Sans', sans-serif;
+}
+.lightbox-content{
+    width: 90%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 520px;
+    margin: 0 auto;
+    background: #fff;
+}
+.lightbox img{
+    max-width: 450px;
+    width: 100%;
+}
+.lightbox-content .left{
+    width:55%;
+    float:left;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    max-height: 520px;
+    align-items: center;
+}
+.lightbox-content .right{
+    width:45%;
+    float:left;    
+    text-align: left;
+}
+.lightbox-content h3,.lightbox-content p{
+    margin-bottom: 15px;
+}
+.lightbox-content p.price{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1.17em;
+}
+.lightbox-content p.price span{
+    color: #d73a1e;
+}
+.lightbox-content button{
+    width:138px;
+}
+
+/**** FOOTER ****/
+footer{
+    background: #e6e6e6;
+    height: auto;
+    display: inline-block;
+    width: 100% !important;
+}
+footer .icons{
+    margin:40px 0;
+}
+footer .icons a{
+    text-decoration: none;
+    padding-right:25px;
+}
+footer nav ul{
+    padding:0;
+}
+footer nav li{
+    display: inline;
+    margin-right: 10px;
+}
+footer nav a{
+    color: #d73a1e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 15px;
+}
+footer nav a:hover{
+    color:#ec8775;
+}
+footer input{
+    width: calc(100% - 140px);
+}
+footer .footer-content{
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin:40px 40px;
+}
+footer .footer-content .copyright{
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color:#666666;
+}
+footer .footer-subscribe{
+    align-items: center;
+    justify-content: center;
+    float: right;
+    background: #fff;
+    padding:20px;
+    margin:40px 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+footer .footer-subscribe p{
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+footer .footer-subscribe p.italic{
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+}
+footer img{    
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+footer img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+
+
+/**** MOBILE ****/
+header .search-mobile{
+    display: none;
+}
+header .shipping-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    header{
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: #fff;
+        z-index: 1;
+    }
+    header #open-menu{
+        display: block;
+        background: url(../assets/menu-icon.png) no-repeat center center;
+        width:37px;
+        height: 50px;
+        float: left;
+        margin: 20px 0 0 10px;
+        cursor: pointer;
+    }
+    header #close-menu{
+        display: block;
+        background: url(../assets/close-icon.png) no-repeat center center;
+        width:52px;
+        height: 50px;
+        float: left;
+        padding: 0;
+        cursor: pointer;
+    }
+    header .mobile-menu-header{
+        background: #fff;
+        padding:20px 0;
+    }
+    header .search-mobile{
+        padding: 5px;
+        display: block;
+    }
+    header .search{
+        display: none;
+    }
+    header input{
+        width: calc(100% - 110px);
+    }
+
+    header>div.left {
+        float:none;
+        display: inline-block;
+        margin:20px 5px;
+    }
+    header>div.right {
+        display: block;
+        text-align: center;
+        margin: 20px 10px 0 0;
+    }
+    header>div.left>div,header>div.right>div{
+        padding: 0;
+    }
+    header .brand{
+        font-size: 30px;
+    }
+    header .slogan{
+        font-size: 14px;
+    }
+    header p.shipping {
+        display: none;
+    }
+    header .shipping-mobile{
+        display: block;
+        background: #ececec;
+        padding: 5px;
+        color:#787878;
+        font-family: 'Droid Serif', sans-serif;
+        font-style: italic;       
+    }
+    header .shipping-mobile span{
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 15px; 
+    }
+    header #header-nav{
+        display: none;
+        text-align: left;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.86);
+    }
+    header nav .nav-left,header nav .nav-left li{
+        display:block;
+        padding:0;
+    }
+    header nav a{
+        padding: 12px 16px;
+    }
+    header nav .drop-down a{
+        border-top: 1px #6a5483 solid;
+        width: calc(100% - 47px);
+        padding-left: 50px;
+    }
+    header nav .drop-down a:after{
+        border:0;
+    }
+    header nav a.active {
+        background: #422a53;
+        width: calc(100% - 46px);
+        padding-left: 50px;
+        border-radius: 0;       
+    }
+    header nav a.active:after{
+        content: "";
+        background: #4f336d;
+        position: absolute;
+        bottom: 2px;
+        left: 40px;
+        height: 1px;
+        width: 90px;
+    }
+    header nav .nav-right {
+        float:none;
+        margin-right: 0;
+        display: block;
+        text-align: center;
+        padding: 20px 0 10px;
+    }
+    section{
+        margin:150px 0 0 0; 
+    }
+    section h2 {
+        text-align: center;
+    }
+    section #products>figure{
+        width:50%;
+        margin: 20px 0;        
+    }
+    section #products>figure>a>img{
+        width: 100%;
+    }
+    .lightbox{
+        padding-top:5vh;
+    }
+    .lightbox-content .left,.lightbox-content .right{
+    width: 48%;
+    }
+    .lightbox-content {
+        height: 95%;
+    }
+    footer nav {
+        display: none;
+    }
+    footer .footer-subscribe{
+        float: none;
+        margin: 20px;
+    }
+    footer .footer-content{
+        width: 100%;
+        text-align: center;
+        margin:0;
+    }
+    footer .footer-content .copyright{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
