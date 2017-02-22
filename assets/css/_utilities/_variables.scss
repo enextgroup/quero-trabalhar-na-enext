@@ -1,0 +1,10 @@
+@import "_functions";
+
+//Váriavel de font-base
+$fontBase: 16 !default;
+
+$gap: pxToRem(40);
+$gapMd: pxToRem(30);
+$gapSm: pxToRem(20);
+$gapXs: pxToRem(10);
+$gapXxs: pxToRem(5);

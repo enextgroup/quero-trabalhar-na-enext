@@ -1,0 +1,19 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+//customização de placeholders
+::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  font-weight: 400;
+}

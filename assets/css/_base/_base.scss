@@ -1,0 +1,64 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+//fontes inicial
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600');
+
+//renderização máxima de viewport para IE/EDGE
+@-ms-viewport {
+  max-width: 100% !important;
+  width: auto !important;
+}
+html {
+  font-family: 'Droid Sans', sans-serif;
+  //font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body {
+  line-height: 1;
+}
+
+// Light reset
+html,
+body,
+blockquote,
+form {
+  margin: 0;
+  padding: 0;
+}
+// Remove unwanted borders
+form,
+fieldset {
+  border: none;
+}
+// Consistency between browsers
+abbr {
+  cursor: help;
+  border-bottom: .063rem dotted #bbb;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+i,
+em {
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+p {
+  line-height: 25px;
+}
