@@ -68,6 +68,10 @@ var getId = function (el) {
 //Verificação se é o browser é IE9
 getIeBrowser('MSIE 9.0');
 
+function teste() {
+    console.info(request.get('GET', 'https://raw.githubusercontent.com/enextgroup/quero-trabalhar-na-enext/master/assets/potions.json', false));
+}
+teste();
 
 //chamadas de funções
 var init = function () {};
