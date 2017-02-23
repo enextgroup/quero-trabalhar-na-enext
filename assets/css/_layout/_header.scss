@@ -1,2 +1,72 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
+
+.l-header {
+  padding: pxToRem(20);
+
+  &_iconMenu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: pxToRem(22);
+    outline: none;
+    padding: 0;
+    width: pxToRem(32);
+
+    &:active, &:focus {
+      .l-header_iconMenu_bar {
+        &:nth-child(1) {
+          @include transform(rotate(-45deg) translate(pxToRem(-5.5), pxToRem(6)));
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          @include transform(rotate(45deg) translate(pxToRem(-5), pxToRem(-6)));
+        }
+      }
+    }
+
+    &_bar {
+      background-color: $colorPurple;
+      border-radius: pxToRem(6);
+      display: block;
+      height: pxToRem(6);
+      margin-bottom: pxToRem(2);
+      overflow: hidden;
+      transition: transform .12s ease-in-out, opacity .12s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &_logo {
+    display: inline-block;
+    text-align: center;
+    width: pxToRem(246);
+
+    &_title {
+      color: $colorOrange;
+      font-family: 'Oswald', sans-serif;
+      font-size: pxToRem(40);
+
+      &_light {
+        font-weight: 400;
+      }
+    }
+
+    &_subtitle {
+      color: $colorPurple;
+      font-family: serif;
+      font-weight: lighter;
+      font-style: italic;
+      font-size: pxToRem(20);
+      position: relative;
+
+      &:before,
+      &:after {}
+    }
+  }
+}
