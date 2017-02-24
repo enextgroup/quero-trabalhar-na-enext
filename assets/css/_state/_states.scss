@@ -1,2 +1,28 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
+
+.s-menuOpen {
+  .l-header_iconMenu_bar {
+    &:nth-child(1) {
+      @include transform(rotate(-45deg) translate(pxToRem(-5.5), pxToRem(6)));
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      @include transform(rotate(45deg) translate(pxToRem(-5), pxToRem(-6)));
+    }
+  }
+
+  .l-header_logo {
+    @include transform(translateY(pxToRem(-500)));
+    position: absolute;
+  }
+
+  .m-formA--search {
+    position: relative;
+    @include transform(translateY(0));
+  }
+}

@@ -68,13 +68,21 @@ var getId = function (el) {
 //Verificação se é o browser é IE9
 getIeBrowser('MSIE 9.0');
 
-function teste() {
-    console.info(request.get('GET', 'https://raw.githubusercontent.com/enextgroup/quero-trabalhar-na-enext/master/assets/potions.json', false));
+function getJsonInfo(urlJson) {
+    console.info(request.get('GET', urlJson, false));
 }
-teste();
+
+function closeOpenMenu() {
+    getId('l-header_iconMenu').addEventListener('click', function () {
+        toggleClass(getId('l-header'), 's-menuOpen');
+    });
+}
 
 //chamadas de funções
-var init = function () {};
+var init = function () {
+    getJsonInfo('https://raw.githubusercontent.com/enextgroup/quero-trabalhar-na-enext/master/assets/potions.json');
+    closeOpenMenu();
+};
 
 //função que chama todas as outras
 document.addEventListener('DOMContentLoaded', function () {

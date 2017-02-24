@@ -14,15 +14,64 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header class="l-header">
-    <button class="l-header_iconMenu">
-        <span class="l-header_iconMenu_bar">&nbsp;</span>
-        <span class="l-header_iconMenu_bar">&nbsp;</span>
-        <span class="l-header_iconMenu_bar">&nbsp;</span>
-    </button>
-    <div class="l-header_logo">
-        <h1 class="l-header_logo_title">Merlin's <span class="l-header_logo_title_light">Potions</span></h1>
-        <h2 class="l-header_logo_subtitle">fine potions since 1026</h2>
+<header class="l-header" id="l-header">
+    <div class="l-header_contentA">
+        <button class="l-header_iconMenu" id="l-header_iconMenu">
+            <span class="l-header_iconMenu_bar">&nbsp;</span>
+            <span class="l-header_iconMenu_bar">&nbsp;</span>
+            <span class="l-header_iconMenu_bar">&nbsp;</span>
+        </button>
+
+        <div class="l-header_logo">
+            <h1 class="l-header_logo_title">Merlin's <span class="l-header_logo_title_light">Potions</span></h1>
+            <h2 class="l-header_logo_subtitle">fine potions since 1026</h2>
+        </div>
+
+        <form action="./" class="m-formA--search">
+            <input class="m-input--search" name="m-search" type="search" placeholder="search our stock" autocomplete="off" />
+        </form>
+
+        <div class="l-header_price">
+            <p class="l-header_price_text"><span class="l-header_price_text_featured">Free shipping</span> on orders over <span class="l-header_price_number">$50</span></p>
+        </div>
+
+        <figure class="l-header_quantify">
+            <div class="l-header_quantify_wrap">
+                <img class="l-header_quantify_wrap_img" src="assets/img/icons/balde.png" alt="Icone de balde, representa a adição de produtos" />
+            </div>
+            <figcaption class="l-header_quantify_text">
+                <p class="l-header_quantify_text_paragraph">Bag: <span class="l-header_quantify_text_number" id="">1</span></p>
+            </figcaption>
+        </figure>
+    </div>
+
+    <div class="l-header_contentB">
+        <nav class="">
+            <ul class="">
+                <li class="">
+                    <a href="" class="">Potions</a>
+                </li>
+                <li class="">
+                    <a href="" class="">Ingredients</a>
+                </li>
+                <li class="">
+                    <a href="" class="">Books</a>
+                </li>
+                <li class="">
+                    <a href="" class="">Supplies</a>
+                </li>
+                <li class="">
+                    <a href="" class="">Charms</a>
+                </li>
+                <li class="">
+                    <a href="" class="">Clearance!</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="">
+            <p><a href="#">Sign In</a> or <a href="#">Sign Up</a></p>
+        </div>
     </div>
 </header>
 

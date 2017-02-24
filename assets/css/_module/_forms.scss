@@ -2,18 +2,61 @@
 @import '../_utilities/utilities';
 
 //customização de placeholders
-::-webkit-input-placeholder {
-  font-weight: 400;
+.m-formA {
+  display: inline-block;
+
+  &--search {
+    @extend .m-formA;
+    width: pxToRem(230);
+  }
+
+  @media(max-width: pxToRem(360)) {
+    &--search {
+      width: pxToRem(198);
+    }
+  }
+
+  @media(min-width: pxToRem(768)) {
+    &--search {
+      width: pxToRem(280);
+    }
+  }
 }
 
-:-moz-placeholder {
-  font-weight: 400;
-}
+.m-input {
+  border: pxToRem(1) solid $colorLightBlack;
+  border-radius: pxToRem(8);
+  outline: none;
+  padding: pxToRem(10);
+  transition: border-color .12s ease-in-out;
+  width: 100%;
 
-::-moz-placeholder {
-  font-weight: 400;
-}
+  &--search {
+    @extend .m-input;
+    background: url('../img/icons/search.png') no-repeat center left;
+    -ms-background-position-x: pxToRem(12);
+    background-position-x: pxToRem(12);
+    background-size: pxToRem(21) pxToRem(21);
+    padding-left: pxToRem(40);
+  }
 
-:-ms-input-placeholder {
-  font-weight: 400;
+  &::-webkit-input-placeholder {
+    color: $colorGray;
+  }
+
+  &:-moz-placeholder {
+    color: $colorGray;
+  }
+
+  &::-moz-placeholder {
+    color: $colorGray;
+  }
+
+  &:-ms-input-placeholder {
+    color: $colorGray;
+  }
+
+  &:focus {
+    border-color: $colorPurple;
+  }
 }

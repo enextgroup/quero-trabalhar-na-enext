@@ -2,7 +2,22 @@
 @import '../_utilities/utilities';
 
 .l-header {
-  padding: pxToRem(20);
+  &_contentA,
+  &_contentB {
+    @include flexboxContainer(flex, null, wrap, space-between, center, null);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &_contentA {
+    max-width: pxToRem(950);
+    padding: pxToRem(20) pxToRem(10) pxToRem(30);
+
+    .m-formA--search {
+      position: absolute;
+      @include transform(translateY(pxToRem(-500)));
+    }
+  }
 
   &_iconMenu {
     background-color: transparent;
@@ -13,22 +28,6 @@
     outline: none;
     padding: 0;
     width: pxToRem(32);
-
-    &:active, &:focus {
-      .l-header_iconMenu_bar {
-        &:nth-child(1) {
-          @include transform(rotate(-45deg) translate(pxToRem(-5.5), pxToRem(6)));
-        }
-
-        &:nth-child(2) {
-          opacity: 0;
-        }
-
-        &:nth-child(3) {
-          @include transform(rotate(45deg) translate(pxToRem(-5), pxToRem(-6)));
-        }
-      }
-    }
 
     &_bar {
       background-color: $colorPurple;
@@ -45,6 +44,7 @@
   &_logo {
     display: inline-block;
     text-align: center;
+    transition: transform .12s ease-in-out;
     width: pxToRem(246);
 
     &_title {
@@ -60,13 +60,137 @@
     &_subtitle {
       color: $colorPurple;
       font-family: serif;
-      font-weight: lighter;
+      font-weight: 600;
       font-style: italic;
       font-size: pxToRem(20);
       position: relative;
 
       &:before,
-      &:after {}
+      &:after {
+        content: ' ';
+        background-color: $colorGray;
+        display: inline-block;
+        height: pxToRem(2);
+        position: absolute;
+        top: 50%;
+        width: pxToRem(20);
+      }
+
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+    }
+
+    @media(max-width: pxToRem(368)) {
+      width: pxToRem(200);
+
+      &_title {
+        font-size: pxToRem(32);
+      }
+
+      &_subtitle {
+        font-size: pxToRem(16);
+      }
+    }
+  }
+
+  &_quantify {
+    max-width: pxToRem(52);
+    margin: pxToRem(10) 0 0;
+    text-align: center;
+
+    &_wrap {
+      display: inline-block;
+
+      &_img {
+        max-width: 100%;
+      }
+    }
+
+    &_text {
+      color: $colorGray;
+      display: inline-block;
+      text-transform: uppercase;
+
+      &_paragraph {
+        margin: 0;
+      }
+
+      &_number {
+        color: $colorLightOrange;
+        font-weight: 700;
+      }
+    }
+
+    @media(min-width: pxToRem(832)), (min-width: pxToRem(422)) and (max-width: pxToRem(620)) {
+      max-width: pxToRem(122);
+
+      &_wrap,
+      &_text {
+        font-size: pxToRem(14);
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &_price {
+    background-color: $colorLightGray;
+    color: $colorDarkGray;
+    font-family: serif;
+    font-weight: 600;
+    font-style: italic;
+    padding: pxToRem(10);
+
+    &_text {
+      font-size: pxToRem(20);
+      margin: 0;
+
+      &_featured {
+        font-size: pxToRem(24);
+      }
+
+      &_number {}
+    }
+
+    @media(max-width: pxToRem(767)) {
+      @include flexboxItens(5, auto, 1 1 auto);
+      margin: pxToRem(5) pxToRem(-10) 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @media(min-width: pxToRem(620)) {
+    &_contentA {
+      .m-formA--search {
+        position: relative;
+        @include transform(translateY(0));
+      }
+    }
+  }
+
+  @media(min-width: pxToRem(768)) {
+    &_iconMenu {
+      display: none;
+    }
+
+    &_price {
+      background-color: transparent;
+      color: $colorLightOrange;
+      max-width: pxToRem(120);
+      padding: 0;
+
+      &_text {
+        font-size: pxToRem(14);
+
+        &_featured {
+          font-size: pxToRem(18);
+        }
+      }
     }
   }
 }
