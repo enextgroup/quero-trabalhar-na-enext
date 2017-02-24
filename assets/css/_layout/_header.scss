@@ -21,6 +21,8 @@
   &_contentB {
     background-color: $colorPurple;
     transition: transform .20s ease-in-out;
+    position: absolute;
+    width: 100%;
 
     &_container {
       max-width: pxToRem(878);
@@ -180,7 +182,7 @@
 
     @media(max-width: pxToRem(767)) {
       @include flexboxItens(5, auto, 1 1 auto);
-      margin: pxToRem(5) pxToRem(-10) 0;
+      margin: pxToRem(20) pxToRem(-10) 0;
       text-align: center;
       width: 100%;
     }
@@ -252,6 +254,7 @@
   @media(min-width: pxToRem(768)) {
     &_contentB {
       padding: pxToRem(10);
+      position: relative;
 
       &_container {
         @include flexboxContainer(flex, null, null, space-between, center, null);

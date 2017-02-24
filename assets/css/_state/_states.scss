@@ -1,6 +1,7 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
 
+//classe de link ativo no menu
 .s-menuOpen {
   .l-header_iconMenu_bar {
     &:nth-child(1) {
@@ -26,6 +27,7 @@
     .m-formA--search {
       position: relative;
       @include transform(translateY(0));
+      @include calc(width, '100% - #{pxToRem(60)}', null);
     }
 
     .l-header_quantify {
@@ -36,11 +38,12 @@
   @media(max-width: pxToRem(767)) {
     .l-header_contentB {
       @include transform(scaleY(1) translateY(0));
+      position: relative;
     }
   }
 }
 
-//classe de link ativo no menu
+//classe de link para página ativa
 .s-active {
   background-color: $colorDarkPurple;
 }

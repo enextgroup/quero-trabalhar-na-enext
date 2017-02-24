@@ -1,2 +1,18 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
+
+.l-gridA {
+  @include flexboxContainer(flex, null, wrap, space-around, null, null);
+
+  &_item {
+    @include calc(width, '50% - #{pxToRem(20)}', null);
+  }
+
+  @media(min-width: pxToRem(768)) {
+    @include flexboxContainer(null, null, null, space-between, null, null);
+
+    &_item {
+      @include calc(width, '(100% - #{pxToRem(100)}) / 3', null);
+    }
+  }
+}
