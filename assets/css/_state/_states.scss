@@ -16,13 +16,31 @@
     }
   }
 
-  .l-header_logo {
-    @include transform(translateY(pxToRem(-500)));
-    position: absolute;
+  @media(max-width: pxToRem(619)) {
+    .l-header_logo {
+      @include transform(translateY(pxToRem(-500)));
+      margin-left: 25%;
+      position: absolute;
+    }
+
+    .m-formA--search {
+      position: relative;
+      @include transform(translateY(0));
+    }
+
+    .l-header_quantify {
+      display: none;
+    }
   }
 
-  .m-formA--search {
-    position: relative;
-    @include transform(translateY(0));
+  @media(max-width: pxToRem(767)) {
+    .l-header_contentB {
+      @include transform(scaleY(1) translateY(0));
+    }
   }
+}
+
+//classe de link ativo no menu
+.s-active {
+  background-color: $colorDarkPurple;
 }

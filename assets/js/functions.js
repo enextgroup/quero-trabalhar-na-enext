@@ -24,9 +24,6 @@ var getId = function (el) {
     toggleClass = function (el, className) {
         el.classList.toggle(className);
     },
-    getIeBrowser = function (target) {
-        navigator.userAgent.match(target) ? addClass(getElem('html'), 'IE-9') : console.info('Not IE9 browser');
-    },
     request = (function () {
         var xhr = new XMLHttpRequest();
 
@@ -65,17 +62,21 @@ var getId = function (el) {
         };
     })();
 
-//Verificação se é o browser é IE9
-getIeBrowser('MSIE 9.0');
-
 function getJsonInfo(urlJson) {
     console.info(request.get('GET', urlJson, false));
 }
 
 function closeOpenMenu() {
+    var width;
     getId('l-header_iconMenu').addEventListener('click', function () {
-        toggleClass(getId('l-header'), 's-menuOpen');
+        var width = window.innerWidth;
+        width <= 767 ? toggleClass(getId('l-header'), 's-menuOpen') : false;
     });
+
+    window.addEventListener('resize', function () {
+        var width = window.innerWidth;
+        width >= 768 ? removeClass(getId('l-header'), 's-menuOpen') : false;
+    })
 }
 
 //chamadas de funções

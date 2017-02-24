@@ -10,12 +10,6 @@
     width: pxToRem(230);
   }
 
-  @media(max-width: pxToRem(360)) {
-    &--search {
-      width: pxToRem(198);
-    }
-  }
-
   @media(min-width: pxToRem(768)) {
     &--search {
       width: pxToRem(280);
