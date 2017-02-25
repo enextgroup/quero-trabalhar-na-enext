@@ -63,18 +63,34 @@ var getId = function (el) {
     })();
 
 function getJsonInfo(urlJson) {
-    console.info(request.get('GET', urlJson, false));
+    var info = request.get('GET', urlJson, false);
+    !localStorage.getItem('potionsInfo') ? localStorage.setItem('potionsInfo', info): false;
 }
+
+function createBoxA() {
+    var info = JSON.parse(localStorage.getItem('potionsInfo')),
+        element = document.createElement('div'),
+        figure = document.createElement('div');
+
+    element.setAttribute('class', 'l-gridA_item');
+    figure.setAttribute('class', 'm-boxA');
+
+    for(var counter = 1; counter < 7; counter++) {
+        figure.setAttribute('data-id', info.potions[counter].id);
+        console.log(figure.getAttribute('data-id'));
+    }
+}
+createBoxA();
 
 function closeOpenMenu() {
     var width;
     getId('l-header_iconMenu').addEventListener('click', function () {
-        var width = window.innerWidth;
+        width = window.innerWidth;
         width <= 767 ? toggleClass(getId('l-header'), 's-menuOpen') : false;
     });
 
     window.addEventListener('resize', function () {
-        var width = window.innerWidth;
+        width = window.innerWidth;
         width >= 768 ? removeClass(getId('l-header'), 's-menuOpen') : false;
     })
 }

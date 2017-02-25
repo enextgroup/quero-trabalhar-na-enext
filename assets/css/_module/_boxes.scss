@@ -2,13 +2,43 @@
 @import '../_utilities/utilities';
 
 .m-boxA {
+  cursor: pointer;
   margin: 0;
-  padding: 0;
+  padding: pxToRem(20) 0;
 
   &_wrap {
     &_img {
       max-width: 100%;
       width: 100%;
+    }
+  }
+
+  &_content {
+    text-align: center;
+
+    &_text {
+      color: $colorBlack;
+      font-family: serif;
+      font-weight: 600;
+      font-size: pxToRem(14);
+      line-height: pxToRem(20);
+      margin: 0 0 pxToRem(40);
+    }
+
+    &_value {
+      color: $colorOrange;
+    }
+  }
+
+  &:hover {
+    background-color: $colorLightGray;
+  }
+
+  @media(min-width: pxToRem(568)) {
+    &_content {
+      &_text {
+        font-size: pxToRem(18);
+      }
     }
   }
 }

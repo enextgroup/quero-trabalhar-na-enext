@@ -5,7 +5,13 @@
   @include flexboxContainer(flex, null, wrap, space-around, null, null);
 
   &_item {
-    @include calc(width, '50% - #{pxToRem(20)}', null);
+    @include calc(width, '50% - #{pxToRem(10)}', null);
+  }
+
+  @media(min-width: pxToRem(568)) {
+    &_item {
+      @include calc(width, '50% - #{pxToRem(20)}', null);
+    }
   }
 
   @media(min-width: pxToRem(768)) {

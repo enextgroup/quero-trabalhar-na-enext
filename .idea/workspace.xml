@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="304b5517-1222-4f30-b993-5676d8c8e100" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_layout/_container.scss" afterPath="$PROJECT_DIR$/assets/css/_layout/_container.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_layout/_grids.scss" afterPath="$PROJECT_DIR$/assets/css/_layout/_grids.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_layout/_header.scss" afterPath="$PROJECT_DIR$/assets/css/_layout/_header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_module/_boxes.scss" afterPath="$PROJECT_DIR$/assets/css/_module/_boxes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_module/_formatting.scss" afterPath="$PROJECT_DIR$/assets/css/_module/_formatting.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/_state/_states.scss" afterPath="$PROJECT_DIR$/assets/css/_state/_states.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/functions.js" afterPath="$PROJECT_DIR$/assets/js/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+            <state relative-caret-position="206">
+              <caret line="84" column="27" lean-forward="true" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="33" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#813#819#1" expanded="true" />
@@ -50,42 +46,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_formatting.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/_module/_formatting.scss">
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_boxes.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/_module/_boxes.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_grids.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/_layout/_grids.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_container.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/_layout/_container.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="291">
+              <caret line="78" column="63" lean-forward="false" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+              <folding>
+                <element signature="e#45#96#0" expanded="false" />
+                <element signature="e#126#254#0" expanded="false" />
+                <element signature="e#284#413#0" expanded="false" />
+                <element signature="e#445#497#0" expanded="false" />
+                <element signature="e#539#590#0" expanded="false" />
+                <element signature="e#635#682#0" expanded="false" />
+                <element signature="e#727#774#0" expanded="false" />
+                <element signature="e#803#2058#0" expanded="false" />
+                <element signature="e#877#1232#0" expanded="false" />
+                <element signature="e#917#1222#0" expanded="false" />
+                <element signature="e#991#1126#0" expanded="false" />
+                <element signature="e#1013#1024#0" expanded="false" />
+                <element signature="e#1132#1208#0" expanded="false" />
+                <element signature="e#1248#2051#0" expanded="false" />
+                <element signature="e#1308#1639#0" expanded="false" />
+                <element signature="e#1386#1500#0" expanded="false" />
+                <element signature="e#1706#2041#0" expanded="false" />
+                <element signature="e#1784#1898#0" expanded="false" />
+                <element signature="n#!!block;n#closeOpenMenu#0" expanded="false" />
+                <element signature="e#2829#2948#0" expanded="false" />
+                <element signature="e#3002#3121#0" expanded="false" />
+                <element signature="e#3171#3312#0" expanded="false" />
+                <element signature="e#3408#3423#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,6 +88,16 @@
               <folding>
                 <element signature="e#475#960#2" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_formatting.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/_module/_formatting.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,6 +121,7 @@
       <find>grid</find>
       <find>li class=&quot;&quot;</find>
       <find>m-gridA</find>
+      <find>font-sty</find>
     </findStrings>
     <replaceStrings>
       <replace>assets</replace>
@@ -145,17 +146,17 @@
         <option value="$PROJECT_DIR$/assets/css/_utilities/_functions.scss" />
         <option value="$PROJECT_DIR$/assets/css/_utilities/_mixins.scss" />
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/assets/css/_utilities/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/css/_base/_base.scss" />
         <option value="$PROJECT_DIR$/assets/css/_module/_forms.scss" />
-        <option value="$PROJECT_DIR$/assets/css/_module/_boxes.scss" />
         <option value="$PROJECT_DIR$/assets/css/_module/_formatting.scss" />
         <option value="$PROJECT_DIR$/assets/css/_state/_states.scss" />
         <option value="$PROJECT_DIR$/assets/css/_layout/_header.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/_layout/_container.scss" />
         <option value="$PROJECT_DIR$/assets/css/_layout/_grids.scss" />
+        <option value="$PROJECT_DIR$/assets/css/_module/_boxes.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/functions.js" />
       </list>
     </option>
   </component>
@@ -246,24 +247,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -287,50 +270,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_state" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quero-trabalhar-na-enext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,12 +365,12 @@
       <workItem from="1487895072560" duration="12389000" />
       <workItem from="1487935901082" duration="6903000" />
       <workItem from="1487963513434" duration="3187000" />
-      <workItem from="1487970914681" duration="5415000" />
+      <workItem from="1487970914681" duration="13603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37942000" />
+    <option name="totallyTimeSpent" value="46130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -442,18 +381,18 @@
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -531,7 +470,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#69#6363#0" expanded="false" />
             <element signature="e#84#211#0" expanded="false" />
             <element signature="e#226#419#0" expanded="false" />
             <element signature="e#329#415#0" expanded="false" />
@@ -540,10 +478,8 @@
             <element signature="e#672#742#0" expanded="false" />
             <element signature="e#761#1237#0" expanded="false" />
             <element signature="e#959#1233#0" expanded="false" />
-            <element signature="e#1248#2235#0" expanded="false" />
             <element signature="e#1383#1539#0" expanded="false" />
             <element signature="e#1498#1533#0" expanded="false" />
-            <element signature="e#1556#2042#0" expanded="false" />
             <element signature="e#1748#1950#0" expanded="false" />
             <element signature="e#1967#1993#0" expanded="false" />
             <element signature="e#2009#2036#0" expanded="false" />
@@ -676,7 +612,6 @@
         <state relative-caret-position="1334">
           <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
           <folding>
-            <element signature="e#69#6363#0" expanded="false" />
             <element signature="e#84#211#0" expanded="false" />
             <element signature="e#226#419#0" expanded="false" />
             <element signature="e#329#415#0" expanded="false" />
@@ -685,10 +620,8 @@
             <element signature="e#672#742#0" expanded="false" />
             <element signature="e#761#1237#0" expanded="false" />
             <element signature="e#959#1233#0" expanded="false" />
-            <element signature="e#1248#2235#0" expanded="false" />
             <element signature="e#1383#1539#0" expanded="false" />
             <element signature="e#1498#1533#0" expanded="false" />
-            <element signature="e#1556#2042#0" expanded="false" />
             <element signature="e#1748#1950#0" expanded="false" />
             <element signature="e#1967#1993#0" expanded="false" />
             <element signature="e#2009#2036#0" expanded="false" />
@@ -921,6 +854,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
           <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#36#133#0" expanded="false" />
+            <element signature="e#218#548#0" expanded="false" />
+            <element signature="e#608#764#0" expanded="false" />
+            <element signature="e#909#4460#0" expanded="false" />
+            <element signature="e#932#1245#0" expanded="false" />
+            <element signature="e#1278#1633#0" expanded="false" />
+            <element signature="e#1704#1845#0" expanded="false" />
+            <element signature="e#1885#2028#0" expanded="false" />
+            <element signature="e#2063#2200#0" expanded="false" />
+            <element signature="e#2243#2382#0" expanded="false" />
+            <element signature="e#2536#2566#0" expanded="false" />
+            <element signature="e#2575#2611#0" expanded="false" />
+            <element signature="e#2844#2930#0" expanded="false" />
+            <element signature="e#2968#3048#0" expanded="false" />
+            <element signature="e#3091#3183#0" expanded="false" />
+            <element signature="e#3225#3320#0" expanded="false" />
+            <element signature="e#3329#3448#0" expanded="false" />
+            <element signature="e#3600#3683#0" expanded="false" />
+            <element signature="e#3719#3808#0" expanded="false" />
+            <element signature="e#3817#3932#0" expanded="false" />
+            <element signature="e#4068#4104#0" expanded="false" />
+            <element signature="e#4140#4174#0" expanded="false" />
+            <element signature="e#4215#4253#0" expanded="false" />
+            <element signature="e#4293#4334#0" expanded="false" />
+            <element signature="e#4343#4384#0" expanded="false" />
+            <element signature="e#5134#5171#0" expanded="false" />
+            <element signature="e#5204#5239#0" expanded="false" />
+            <element signature="e#5248#5291#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -932,23 +895,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="77" column="50" lean-forward="false" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/icons/arrow.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_base/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="15" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_module/_forms.scss">
@@ -965,14 +914,6 @@
             <element signature="e#934#962#0" expanded="false" />
             <element signature="e#974#1011#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_module/_formatting.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,12 +936,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_utilities/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#475#960#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_base/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_layout/_grids.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_module/_boxes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="e#137#202#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/_layout/_container.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/_layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="137">
+          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="78" selection-end-column="25" />
           <folding>
-            <element signature="e#69#6363#0" expanded="false" />
             <element signature="e#84#211#0" expanded="false" />
             <element signature="e#226#419#0" expanded="false" />
             <element signature="e#329#415#0" expanded="false" />
@@ -1009,10 +1001,8 @@
             <element signature="e#672#742#0" expanded="false" />
             <element signature="e#761#1237#0" expanded="false" />
             <element signature="e#959#1233#0" expanded="false" />
-            <element signature="e#1248#2235#0" expanded="false" />
             <element signature="e#1383#1539#0" expanded="false" />
             <element signature="e#1498#1533#0" expanded="false" />
-            <element signature="e#1556#2042#0" expanded="false" />
             <element signature="e#1748#1950#0" expanded="false" />
             <element signature="e#1967#1993#0" expanded="false" />
             <element signature="e#2009#2036#0" expanded="false" />
@@ -1067,36 +1057,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_utilities/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#475#960#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_module/_boxes.scss">
+    <entry file="file://$PROJECT_DIR$/assets/css/_module/_formatting.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="7" />
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="138" column="27" lean-forward="false" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+        <state relative-caret-position="206">
+          <caret line="84" column="27" lean-forward="true" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="33" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#813#819#1" expanded="true" />
@@ -1113,19 +1085,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_layout/_container.scss">
+    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/_layout/_grids.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="291">
+          <caret line="78" column="63" lean-forward="false" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+          <folding>
+            <element signature="e#45#96#0" expanded="false" />
+            <element signature="e#126#254#0" expanded="false" />
+            <element signature="e#284#413#0" expanded="false" />
+            <element signature="e#445#497#0" expanded="false" />
+            <element signature="e#539#590#0" expanded="false" />
+            <element signature="e#635#682#0" expanded="false" />
+            <element signature="e#727#774#0" expanded="false" />
+            <element signature="e#803#2058#0" expanded="false" />
+            <element signature="e#877#1232#0" expanded="false" />
+            <element signature="e#917#1222#0" expanded="false" />
+            <element signature="e#991#1126#0" expanded="false" />
+            <element signature="e#1013#1024#0" expanded="false" />
+            <element signature="e#1132#1208#0" expanded="false" />
+            <element signature="e#1248#2051#0" expanded="false" />
+            <element signature="e#1308#1639#0" expanded="false" />
+            <element signature="e#1386#1500#0" expanded="false" />
+            <element signature="e#1706#2041#0" expanded="false" />
+            <element signature="e#1784#1898#0" expanded="false" />
+            <element signature="n#!!block;n#closeOpenMenu#0" expanded="false" />
+            <element signature="e#2829#2948#0" expanded="false" />
+            <element signature="e#3002#3121#0" expanded="false" />
+            <element signature="e#3171#3312#0" expanded="false" />
+            <element signature="e#3408#3423#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
