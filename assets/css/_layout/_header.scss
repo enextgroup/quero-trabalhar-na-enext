@@ -334,6 +334,10 @@
   @media(min-width: pxToRem(856)) {
     &_menu {
       min-width: pxToRem(640);
+
+      &_link {
+        font-size: pxToRem(18);
+      }
     }
   }
 }

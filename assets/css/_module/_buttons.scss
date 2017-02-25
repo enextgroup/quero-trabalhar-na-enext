@@ -1,2 +1,19 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
+
+.m-buttonA {
+  background-color: $colorOrange;
+  border: none;
+  border-radius: pxToRem(8);
+  color: $colorWhite;
+  cursor: pointer;
+  outline: none;
+  padding: pxToRem(12);
+  transition: background-color .12s ease-in-out;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    background-color: $colorLightOrange;
+  }
+}

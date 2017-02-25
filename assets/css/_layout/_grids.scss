@@ -22,3 +22,30 @@
     }
   }
 }
+
+.l-gridB {
+  @include flexboxContainer(flex, null, nowrap, space-between, center, null);
+
+  &_itemA,
+  &_itemB {
+    display: inline-block;
+  }
+
+  &_itemA {
+    @include calc(width, '100% - #{pxToRem(90)}', null)
+  }
+
+  &_itemB {
+    width: pxToRem(84);
+  }
+
+  @media(min-width: pxToRem(568)) {
+    &_itemA {
+      @include calc(width, '100% - #{pxToRem(124)}', null)
+    }
+
+    &_itemB {
+      width: pxToRem(114);
+    }
+  }
+}
