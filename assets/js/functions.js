@@ -35,52 +35,76 @@ var getId = function (el) {
                     // ...our code here...
                     return xhr.response;
                 } else {
-                    console.error('Erro de requisição');
+                    console.error('Erro de requisição:' + xhr.status);
                 }
             }
         }
 
         return{
-            get: function (method, url, async, setHeader) {
-                xhr.open(method, url, async);
-                if(setHeader) {
-                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                }
+            get: function (method, url) {
+                xhr.open(method, url, false);
                 xhr.onreadystatechange = stateChange();
                 xhr.send();
-                return xhr.responseText;
-            },
-            post: function (method, url, async, data, setHeader) {
-                xhr.open(method, url, async);
-                if(setHeader) {
-                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                }
-                xhr.onreadystatechange = stateChange();
-                xhr.send(data);
                 return xhr.responseText;
             }
         };
     })();
 
 function getJsonInfo(urlJson) {
-    var info = request.get('GET', urlJson, false);
-    !localStorage.getItem('potionsInfo') ? localStorage.setItem('potionsInfo', info): false;
-}
+    var info;
 
-function createBoxA() {
-    var info = JSON.parse(localStorage.getItem('potionsInfo')),
-        element = document.createElement('div'),
-        figure = document.createElement('div');
-
-    element.setAttribute('class', 'l-gridA_item');
-    figure.setAttribute('class', 'm-boxA');
-
-    for(var counter = 1; counter < 7; counter++) {
-        figure.setAttribute('data-id', info.potions[counter].id);
-        console.log(figure.getAttribute('data-id'));
+    if(!localStorage.getItem('potionsInfo')){
+        info = request.get('GET', urlJson, false);
+        localStorage.setItem('potionsInfo', info)
     }
 }
-createBoxA();
+
+function createBox() {
+    var getInfo = JSON.parse(localStorage.getItem('potionsInfo')),
+        info = getInfo.potions,
+        box;
+
+    function mountedBox(idValue, imgSource, potionName, potionValue) {
+        //criação de elementos
+        this.element = document.createElement('div');
+        this.figureBox = document.createElement('figure');
+        this.wrap = document.createElement('div');
+        this.img = document.createElement('img');
+        this.content = document.createElement('figcaption');
+        this.contentText = document.createElement('p');
+        this.contentValue = document.createElement('span');
+
+        //setando atributos necessários para os elementos
+        this.element.setAttribute('class', 'l-gridA_item');
+        this.figureBox.setAttribute('class', 'm-boxA');
+        this.wrap.setAttribute('class', 'm-boxA_wrap');
+        this.img.setAttribute('class', 'm-boxA_wrap_img');
+        this.content.setAttribute('class', 'm-boxA_content');
+        this.contentText.setAttribute('class', 'm-boxA_content_text');
+        this.contentValue.setAttribute('class', 'm-boxA_content_value');
+
+        //criação de atributos e textos de acordo com objeto
+        this.figureBox.setAttribute('data-id', idValue);
+        this.img.setAttribute('src', 'assets/img/' + imgSource);
+        this.img.setAttribute('alt', potionName);
+        this.wrap.appendChild(this.img);
+        this.figureBox.appendChild(this.wrap);
+        this.contentText.innerText = potionName + ' - ';
+        this.contentValue.innerText = '$' + potionValue;
+        this.contentText.appendChild(this.contentValue);
+        this.content.appendChild(this.contentText);
+        this.figureBox.appendChild(this.content);
+        this.element.appendChild(this.figureBox);
+
+        return this.element;
+    }
+
+    for(var counter = 0; counter < Object.keys(info).length; counter++) {
+        box = new mountedBox(info[counter+1].id, info[counter+1].image, info[counter+1].name, info[counter+1].price);
+
+        getId('l-grid').appendChild(box);
+    }
+}
 
 function closeOpenMenu() {
     var width;
@@ -98,6 +122,7 @@ function closeOpenMenu() {
 //chamadas de funções
 var init = function () {
     getJsonInfo('https://raw.githubusercontent.com/enextgroup/quero-trabalhar-na-enext/master/assets/potions.json');
+    createBox();
     closeOpenMenu();
 };
 
