@@ -57,7 +57,7 @@
                 <img class="l-header_quantify_wrap_img" src="assets/img/icons/balde.png" alt="Icone de balde, representa a adição de produtos" />
             </div>
             <figcaption class="l-header_quantify_text">
-                <p class="l-header_quantify_text_paragraph">Bag: <span class="l-header_quantify_text_number" id="m-quantifyProducts">0</span></p>
+                <p class="l-header_quantify_text_paragraph">Bag: <span class="l-header_quantify_text_number" id="m-quantifyProducts">1</span></p>
             </figcaption>
         </figure>
     </div>
@@ -180,7 +180,39 @@
 </footer>
 
 <div class="m-overlay" id="m-overlay">
-    <div class="m-modalA"></div>
+    <div class="m-modalA">
+        <button class="m-modalA_close" id="m-closeModal">x</button>
+        <div class="m-modalA_content">
+            <div class="l-gridC">
+                <div class="l-gridC_itemA">
+                    <figure class="m-figureA">
+                        <div class="m-figureA_wrap">
+                            <img class="m-figureA_wrap_img" id="m-referenceImg" src="" alt="" />
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="l-gridC_itemB">
+                    <h3 class="m-modalA_content_title" id="m-referenceTitle"></h3>
+
+                    <h4 class="m-modalA_content_subTitle">Use/Effect: </h4>
+
+                    <p class="m-modalA_content_text" id="m-referenceText">Causes the drinker to advance in age</p>
+
+                    <h4 class="m-modalA_content_subTitle">Ingredients: </h4>
+
+                    <ul class="m-modalA_content_list" id="m-referenceList">
+                    </ul>
+
+                    <p class="m-modalA_content_textPrice">Price: <br />
+                        <span class="m-modalA_content_textPrice_value" id="m-referencePrice">$29.99</span>
+                    </p>
+
+                    <button class="m-buttonA" id="m-addPotion">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="assets/js/functions.js"></script>

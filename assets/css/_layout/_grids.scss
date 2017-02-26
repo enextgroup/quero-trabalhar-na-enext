@@ -49,3 +49,23 @@
     }
   }
 }
+
+.l-gridC {
+  &_itemA,
+  &_itemB {
+    display: inline-block;
+  }
+
+  @media(min-width: pxToRem(568)) {
+    @include flexboxContainer(flex, null, nowrap, space-between, center, null);
+
+    &_itemA,
+    &_itemB {
+      width: 50%;
+    }
+
+    &_itemA {}
+
+    &_itemB {}
+  }
+}

@@ -119,15 +119,39 @@ function closeOpenMenu() {
     })
 }
 
+function infoModal(idReference) {
+    var getInfo = JSON.parse(localStorage.getItem('potionsInfo')),
+        info = getInfo.potions[idReference];
+
+    function createList(textReference) {
+        this.li = document.createElement('li');
+        this.li.setAttribute('class', 'm-modalA_content_list_item');
+        this.li.textContent = textReference;
+
+        getId('m-referenceList').appendChild(this.li);
+    }
+
+    getId('m-referenceImg').setAttribute('src', 'assets/img/' + info.image);
+    getId('m-referenceImg').setAttribute('alt', info.name);
+    getId('m-referenceTitle').textContent = info.name;
+    getId('m-referenceText').textContent = info.effect;
+    getId('m-referencePrice').textContent = '$' + info.price;
+
+    info.ingredients.forEach(function (item, index) {
+        console.log(item + ', ' + index);
+        createList(item);
+    });
+}
+
 function openModal() {
     var reference;
     getAll('.m-boxA').forEach(function (item) {
         item.addEventListener('click', function () {
             reference = this.getAttribute('data-id');
+            infoModal(reference);
 
             addClass(getId('l-body'), 's-noOverflow');
             addClass(getId('m-overlay'), 's-modalOpen');
-            console.log(reference);
         });
     });
 }
@@ -139,7 +163,18 @@ function closeModal() {
         if(this === element.target) {
             removeClass(getId('l-body'), 's-noOverflow');
             removeClass(getId('m-overlay'), 's-modalOpen');
+            getAll('.m-modalA_content_list_item').forEach(function () {
+                getId('m-referenceList').removeChild(getElem('.m-modalA_content_list_item'));
+            });
         }
+    });
+
+    getId('m-closeModal').addEventListener('click', function () {
+        removeClass(getId('l-body'), 's-noOverflow');
+        removeClass(getId('m-overlay'), 's-modalOpen');
+        getAll('.m-modalA_content_list_item').forEach(function () {
+            getId('m-referenceList').removeChild(getElem('.m-modalA_content_list_item'));
+        });
     });
 }
 
