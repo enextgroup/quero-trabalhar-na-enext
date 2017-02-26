@@ -1,4 +1,8 @@
 //Estilos de utlidades
 @import '../_utilities/utilities';
 
-.m-overlay {}
+.m-overlay {
+  background-color: rgba($colorBlack, .6);
+}
+
+.m-modalA {}
