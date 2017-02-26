@@ -119,11 +119,37 @@ function closeOpenMenu() {
     })
 }
 
+function openModal() {
+    var reference;
+    getAll('.m-boxA').forEach(function (item) {
+        item.addEventListener('click', function () {
+            reference = this.getAttribute('data-id');
+
+            addClass(getId('l-body'), 's-noOverflow');
+            addClass(getId('m-overlay'), 's-modalOpen');
+            console.log(reference);
+        });
+    });
+}
+
+function closeModal() {
+    getId('m-overlay').addEventListener('click', function (element) {
+        if(!!element) {element = window.event}
+
+        if(this === element.target) {
+            removeClass(getId('l-body'), 's-noOverflow');
+            removeClass(getId('m-overlay'), 's-modalOpen');
+        }
+    });
+}
+
 //chamadas de funções
 var init = function () {
     getJsonInfo('https://raw.githubusercontent.com/enextgroup/quero-trabalhar-na-enext/master/assets/potions.json');
     createBox();
     closeOpenMenu();
+    openModal();
+    closeModal();
 };
 
 //função que chama todas as outras
