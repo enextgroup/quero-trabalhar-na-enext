@@ -1,0 +1,20 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+.m-titleA {
+  display: block;
+  font-family: serif;
+  font-weight: 600;
+  font-size: pxToRem(24);
+  padding: pxToRem(10);
+  margin: 0 auto;
+  text-align: center;
+
+  @media(min-width: pxToRem(568)) {
+    font-size: pxToRem(28);
+    margin: pxToRem(50) auto pxToRem(20);
+    padding: pxToRem(20);
+    max-width: pxToRem(960);
+    text-align: left;
+  }
+}
