@@ -1,0 +1,131 @@
+@media only screen and (max-width: 960px){
+	header{
+		padding: 0;
+		.top{
+			position: relative;
+		}
+			.content{
+				.btns{
+					position: relative;
+					display: block;
+			    width: 10%;
+			    margin: 25px 5%;
+			    float: left;
+			    text-align: center;
+					.fechado{
+						display: inline-block;
+				    max-width: 34px;
+				    width: 100%;
+					}
+					.aberto{
+						margin: 25px;
+					}
+				}				
+				#logo{
+			    width: 50%;
+			    text-align: center;
+			    padding: 20px 0;
+			    margin: 0 5%;
+			    box-sizing: border-box;
+			    img{	
+			    	max-width: 255px;
+			    	width: 100%;
+			    }
+				}
+				#bar{
+					width: 60%;
+    			margin: 10px 5%;
+		    	text-align: center;
+				}
+				.cauldron{
+					float: left;
+					width: 20%;
+    			text-align: center;
+					h2{
+						padding-top: 50px;
+				    padding-left: 0;
+				    line-height: normal; 
+				    img{
+				    	left: 50%;
+					    margin-left: -25px;
+					    top: 23px;
+				    }
+					}
+				}
+				.ship{
+					display: none;
+				}
+			}
+			
+
+			#menu{
+				.content{
+					.options{
+						float: none;
+            padding: 10px 45px;
+            border-bottom: 1px solid $medium-purple;
+            img{
+            	display: none;
+            }
+					}
+				}
+				.login{
+					width: 140px;
+			    float: none;
+			    overflow: hidden;
+			    margin: 25px auto 15px auto;
+			    p, p.dif{
+			    	margin-top: 5px;
+    				margin-bottom: 5px;
+			    }
+				}
+			}
+			.func{
+					opacity: 1;
+    			display: block;
+    			max-height: 462px;
+    			@include animacoes(.5s);
+				}
+			.hide{
+				display: none;
+    		opacity: 0; 
+    		@include animacoes(.5s);
+			}
+			.menuHide{
+				max-height: 0px;
+				@include animacoes(.5s);
+			}
+
+		
+		
+	}
+
+
+	footer{
+		padding: 20px 0;
+		.first{
+			float: none;
+		  margin: 20px auto;
+		  text-align: center;
+		  .links{
+		  	display: none;
+		  }
+		}
+		.inside{
+			float: none;
+   		margin: 20px auto;
+		}
+
+	}
+
+
+	.msg{
+		display: block;
+	}
+	
+	.container{
+		.title{
+			margin: 50px 10px;
+		}
+	}
+}

@@ -1,0 +1,126 @@
+header{
+  overflow: hidden;
+  padding: 20px 0px 0px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  .btns{
+  	display: none;
+  }
+
+  .toggle{
+  	display: none;
+  }
+	#bar, .alinha-left{
+		position: relative;
+		float: left;
+		width: 30%;
+		input{
+			background-image: url("../images/lupa.png");
+			background-repeat: no-repeat;
+			background-position: left;
+			padding: 9px;
+		    padding-left: 40px;
+		    max-width: 283px;
+		    width: 100%;
+		    border: 1px solid $medium-gray;
+	    	border-radius: 4px;
+	    	margin-top: 10px;
+		}
+	}
+	.alinha-right{
+		position: relative;
+		float: right;
+		width: auto;
+		font-family: $droid;
+		color: $light-gray;
+		h2{
+			position: relative;
+			padding-left: 70px;
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 45px;
+			img{
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -25px;
+			}
+			span{
+				color: $red;
+			}
+		}
+	}
+	.ship{
+		position: relative;
+		margin: 0 20px;
+		padding: 5px;
+		color: $red;
+		font-family: $oswald;
+		h3{
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+		span{
+			font-size: 13px;
+		}
+	}
+	#menu{
+	background-color: $purple;
+	color: $branco;
+	/*overflow: hidden;*/	
+	font-family: $droid;
+	font-size:14px;
+	@include animacoes(.5s);
+	.content{
+		margin: 10px auto 0px;
+		.options{
+			position: relative;
+	    float: left;
+	    padding: 15px 22px;
+	    margin: 0 5px;
+	    border-radius: 4px;
+	    
+			&:hover{
+				background-color: $dark-purple;
+			}
+			img{
+				position: absolute;
+				right: 8px;
+				top: 50%;
+				margin-top: -4px;
+			}
+		}
+		
+		
+		
+	}
+}
+
+
+}
+.login{
+			position: relative;
+			float: right;
+			margin: 15px 20px;
+			p{
+				float: left;
+				&.dif{
+					color: $light-purple;
+					margin: 0 15px;
+				}
+			}
+		}
+.msg{
+		color: $gray;
+		font-family: $oswald;
+		font-size: 18px;
+		background-color: $light-gray;
+		padding: 7px;
+		text-align: center;
+		margin-top: 130px;
+		display: none;
+	}
+
