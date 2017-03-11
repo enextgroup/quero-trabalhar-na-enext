@@ -1,0 +1,35 @@
+@media only screen and (max-width: 580px){
+	footer{
+		.inside{
+			margin: 0 auto;
+		  max-width: none;
+		  width: 80%;
+		  	.mail-input{
+		  		max-width: none;
+    			width: 59%;
+		  	}
+		  	.btn-input{
+		  		width: 35%;
+    			padding: 11px 0;
+		  	}
+		  h3{
+		  	font-size: 13px;
+		  }
+		}
+	}
+
+	.container{
+		.title{
+			text-align: center;
+			margin: 30px 10px;
+		}
+		.items{
+			margin: 30px 4%;
+			width: 42%;
+			h1{
+				font-size: 12px;
+			}
+		}
+	}
+	
+}

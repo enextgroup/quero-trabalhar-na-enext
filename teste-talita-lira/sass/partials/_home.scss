@@ -1,0 +1,37 @@
+.container{
+	
+	.title{
+		position: relative;
+		color: $dark;
+		font-size: 25px;
+		margin: 170px 10px 50px;
+		font-family: $oswald;
+	}
+	.items{
+		position: relative;
+		width: 31%;
+		margin: 50px 1%;
+		float: left;
+		text-align: center;
+		img{
+			max-width: 175px;
+			width: 100%;
+			position: relative;
+			margin: 0 auto;
+		}
+		.together{
+			position: relative;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.name{
+			color: $dark;
+			font-size: 14px;
+			font-family: $droid;
+			font-weight: 700;
+		}
+		.price{
+			color: $red;
+		}
+	}
+}
