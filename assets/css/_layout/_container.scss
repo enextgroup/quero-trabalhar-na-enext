@@ -1,0 +1,11 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+.l-container {
+  max-width: pxToRem(800);
+  margin: pxToRem(60) auto;
+
+  @media(min-width: pxToRem(992)) {
+    padding: 0 pxToRem(20);
+  }
+}

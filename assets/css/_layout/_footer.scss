@@ -1,0 +1,147 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+.l-footer {
+  background-color: $colorLightGray;
+  padding: pxToRem(15) pxToRem(5);
+
+  &_container {
+    @include flexboxContainer(flex, null, wrap, space-between, center, null);
+    max-width: pxToRem(956);
+    margin: 0 auto;
+  }
+
+  &_linksBox {
+    margin-top: pxToRem(20);
+    width: 100%;
+
+    &_list {
+      @include flexboxContainer(flex, null, wrap, space-between, null, null);
+      margin: 0;
+      padding: 0;
+
+      &_item {
+        display: inline-block;
+        max-width: 33.3333333%;
+        padding: 0 pxToRem(5) pxToRem(5);
+      }
+
+      @media(max-width: pxToRem(387)) {
+        display: none;
+      }
+    }
+
+    &_link {
+      color: $colorOrange;
+      cursor: pointer;
+      font-size: pxToRem(20);
+      text-transform: uppercase;
+
+      &:visited {
+        color: $colorOrange;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &_iconList {
+      @include flexboxContainer(flex, null, nowrap, space-between, center, null);
+      max-width: pxToRem(300);
+      margin: pxToRem(30) auto;
+      padding: 0;
+
+      &_item {
+        display: inline-block;
+      }
+
+      &_link {}
+    }
+  }
+
+  &_newsLetter {
+    border-radius: pxToRem(8);
+    background-color: $colorWhite;
+    padding: pxToRem(10);
+    width: 100%;
+
+    &_title {
+      font-family: serif;
+      font-weight: 300;
+      font-style: oblique;
+      font-size: pxToRem(20);
+    }
+
+    &_text {
+      font-size: pxToRem(14);
+    }
+
+    .m-formA {
+      width: 100%;
+    }
+  }
+
+  &_mentionsBox {
+    display: inline-block;
+    margin: 0 0 pxToRem(20);
+    width: 100%;
+
+    &_text {
+      font-size: pxToRem(14);
+    }
+  }
+
+  @media(min-width: pxToRem(768)) {
+    padding: pxToRem(30) pxToRem(15) pxToRem(50);
+
+    &_linksBox {
+      display: inline-block;
+      margin-top: 0;
+      @include calc(width, '100% - #{pxToRem(442)}', null);
+
+      &_iconList {
+        margin: pxToRem(30) 0;
+      }
+    }
+
+    &_newsLetter {
+      @include flexboxItens(2, auto, 0 1 auto);
+      display: inline-block;
+      max-width: pxToRem(360);
+      padding: pxToRem(10);
+
+
+      &_text {
+        font-size: pxToRem(16);
+      }
+    }
+
+    &_mentionsBox {
+      @include flexboxItens(3, auto, 0 1 auto);
+    }
+  }
+
+  @media(min-width: pxToRem(844)) {
+    &_linksBox {
+      &_list {
+        @include flexboxContainer(null, null, null, flex-start, null, null);
+
+        &_item {
+          width: 33.3333333%;
+        }
+      }
+    }
+
+    &_newsLetter {
+      max-width: pxToRem(432);
+      padding: pxToRem(20);
+    }
+
+    &_mentionsBox {
+      &_text {
+        font-size: pxToRem(18);
+      }
+    }
+  }
+}

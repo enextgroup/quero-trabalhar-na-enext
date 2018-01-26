@@ -1,0 +1,56 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+//customização de placeholders
+.m-formA {
+  display: inline-block;
+
+  &--search {
+    @extend .m-formA;
+    width: pxToRem(230);
+  }
+
+  @media(min-width: pxToRem(768)) {
+    &--search {
+      width: pxToRem(280);
+    }
+  }
+}
+
+.m-input {
+  border: pxToRem(1) solid $colorLightBlack;
+  border-radius: pxToRem(8);
+  outline: none;
+  padding: pxToRem(10);
+  transition: border-color .12s ease-in-out;
+  width: 100%;
+
+  &--search {
+    @extend .m-input;
+    background: url('../img/icons/search.png') no-repeat center left;
+    -ms-background-position-x: pxToRem(12);
+    background-position-x: pxToRem(12);
+    background-size: pxToRem(21) pxToRem(21);
+    padding-left: pxToRem(40);
+  }
+
+  &::-webkit-input-placeholder {
+    color: $colorGray;
+  }
+
+  &:-moz-placeholder {
+    color: $colorGray;
+  }
+
+  &::-moz-placeholder {
+    color: $colorGray;
+  }
+
+  &:-ms-input-placeholder {
+    color: $colorGray;
+  }
+
+  &:focus {
+    border-color: $colorPurple;
+  }
+}

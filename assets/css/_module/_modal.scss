@@ -1,0 +1,89 @@
+//Estilos de utlidades
+@import '../_utilities/utilities';
+
+.m-overlay {
+  background-color: rgba($colorBlack, 0);
+  bottom: 0;
+  @include flexboxContainer(flex, null, null, center, center, null);
+  left: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: pxToRem(60) pxToRem(10);
+  position: fixed;
+  right: 0;
+  @include transform(scale(0));
+  transition: transform .15s ease-in-out, background-color .15s ease-in-out;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.m-modalA {
+  background-color: $colorWhite;
+  display: inline-block;
+  min-height: pxToRem(300);
+  padding: pxToRem(30) pxToRem(10) pxToRem(60);
+  position: relative;
+  width: 100%;
+
+  &_close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: pxToRem(10);
+    top: pxToRem(10);
+  }
+
+  &_content {
+    font-family: serif;
+
+    &_title,
+    &_subTitle {
+      font-weight: 600;
+      font-size: pxToRem(20);
+      padding-bottom: pxToRem(25);
+    }
+
+    &_title {}
+
+    &_subTitle {}
+
+    &_text {
+      font-size: pxToRem(18);
+      margin: 0;
+      padding-bottom: pxToRem(25);
+    }
+
+    &_list {
+      font-size: pxToRem(18);
+      margin: 0;
+      padding: 0;
+
+      &_item {
+        list-style: none;
+      }
+    }
+
+    &_textPrice {
+      font-weight: 600;
+      font-size: pxToRem(20);
+      padding-bottom: pxToRem(25);
+
+      &_value {
+        color: $colorOrange;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media(min-width: pxToRem(768)) {
+    max-width: pxToRem(700);
+
+    .m-buttonA {
+      min-width: pxToRem(140);
+      width: auto;
+    }
+  }
+}
