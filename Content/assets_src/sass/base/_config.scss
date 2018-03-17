@@ -19,16 +19,19 @@ $main-width: 1200px; // Tamanho do Container
 |--------------------------------------------------------------------------
 */
 $branco: #ffffff;
-$preto: #010101;
 $azul: #0000ff;
-$vermelho: #ff0000;
 $amarelo: #fff000;
+$roxo-claro: #e6e6e6;
+$pretoa: #010101;
+$preto: #000000;
+$vermelho: #dc381d;
+$roxo-escuro: #533569;
 
-$bg-color: $branco;
-$text-color: $preto;
-$link-color: $azul;
+$bg-color: $roxo-claro;
+$text-color: $pretoa;
+$link-color: $preto;
 $cor-primaria: $vermelho;
-$cor-secundaria: $amarelo;
+$cor-secundaria: $roxo-escuro;
 
 /*
 |--------------------------------------------------------------------------

@@ -3,3 +3,50 @@
 | Sprites
 |--------------------------------------------------------------------------
 */
+
+.ico {
+    &.ico-pesquisa {
+        background: url('../images/ico-outros.jpg');
+        width: 16px;
+        height: 20px;
+        display: inline-block;
+        background-position: 25px;
+    }
+    &.ico-carrinho {
+        background: url('../images/ico-outros.jpg');
+        width: 38px;
+        height: 46px;
+        background-position: 0;
+        float: left;
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0 auto;
+            float: none;
+        }
+    }
+    &.ico-social {
+        background: url('../images/ico-redes-sociais.jpg');
+        width: 36px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 20px;
+        @media(max-width: 768px) {
+            margin-right: 19px;
+        }
+        &.ico-facebook {
+            background-position: 0px;
+        }
+        &.ico-twitter {
+            background-position: -67px;
+        }
+        &.ico-pinterest {
+            background-position: -131px;
+        }
+        &.ico-tumblr {
+            background-position: -196px;
+        }
+        &.ico-googleplus {
+            background-position: -261px;
+        }
+    }
+}

@@ -3,18 +3,6 @@
 | Comum
 |--------------------------------------------------------------------------
 */
-.mobile {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-}
 
 .no-margin {
     margin: 0 !important;
@@ -29,4 +17,17 @@
 
 .text-center {
     text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
