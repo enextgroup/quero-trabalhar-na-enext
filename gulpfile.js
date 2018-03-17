@@ -12,7 +12,8 @@ var gulp		 = require('gulp'),
 	fs			 = require('fs'),
 	named		 = require('vinyl-named'),
 	path		 = require('path'),
-	pkg			 = require('./package.json');
+	pkg			 = require('./package.json'),
+	webserver 	 = require('gulp-webserver');
 
 var config = {
 	sourceMaps: !$.util.env.production
@@ -97,6 +98,15 @@ gulp.task('views', function () {
 gulp.task('clean', function () {
 	return del([paths.dest.extras]);
 });
+
+gulp.task('webserver', function() {
+	gulp.src('./')
+	  .pipe(webserver({
+		open: true,
+		fallback: 'index.html'
+	  }));
+  });
+
 
 gulp.task('watch', ['lint', 'scripts', 'styles', 'images', 'extras', 'views'], function(){
 	gulp.watch(paths.jslint, ['lint']);
