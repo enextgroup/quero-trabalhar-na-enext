@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quero trabalhar na enext
 
 Então você chegou até aqui. Agora vamos avaliar o seu conhecimento técnico que com isso vamos conseguir entender melhor como você trabalha com versionamento, como você estrutura o seu código, então mostre o seu melhor.
@@ -20,3 +21,6 @@ Sua missão é criar a página abaixo:
 
 - Você pode utilizar um pre-processador se desejar.
 - Os arquivos estão na pasta **assets**
+=======
+# quero-trabalhar-na-enext-master
+>>>>>>> ec08284d632b762576f1191319fd122c3a1b3e87

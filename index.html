@@ -1,0 +1,239 @@
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no" name="viewport" />
+    <meta name="author" content="Ivana Costa">
+    <meta name="description" content="Potions made by Merlin.">
+    <link rel="stylesheet" href="Content/assets/css/style.css">
+    <link rel="shortcut icon" href="Content/assets/images/favicon.png">
+    <title>Merlin's Potions</title>
+</head>
+
+<header>
+    <div class="container">
+        <div class="row" id="topo">
+            <div class="col-sm-3 col-xs-6 col-xs-offset-3">
+                <h1>
+                    <img src="Content/assets/images/logo.jpg" alt="Merlin's Potions Logo" titl="Merlin's Potions">
+                </h1>
+            </div>
+            <div class="col-sm-5 desktop">
+                <form id="form-pesquisa">
+                    <i class="ico ico-pesquisa"></i>
+                    <input type="text" placeholder="Search our stock" />
+                </form>
+            </div>
+            <div class="col-sm-4 col-xs-3 carrinho">
+                <div class="col-sm-6 desktop">
+                    <h4 class="cor-primaria">
+                        <span class="font-serifa">
+                            Free shipping
+                        </span>
+                        <small>
+                            on orders over $50
+                        </small>
+                    </h4>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <i class="ico ico-carrinho"></i>
+                    <span class="text-bag">Bag:</span>
+                    <span class="cor-primaria">
+                        1
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="desktop">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="col-sm-9 links desktop">
+                        <ul>
+                            <li>
+                                <a href="#">Potions</a>
+                                <ul id="menuPotions">
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ingredients</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Books</a>
+                            </li>
+                            <li>
+                                <a href="#">Supplies</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Charms</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Option 1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="destaque">Clearance!</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 login desktop">
+                        <a href="#">Sign In</a> or
+                        <a href="#">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="free-shipping" class="mobile text-center">
+        <div class="container">
+            <div class="row">
+                <b class="font-serifa">Free shipping</b> on orders over $50
+            </div>
+        </div>
+    </div>
+
+    <button id="menuHamburger" class="hamburger hamburger--boring" type="button" onclick="abrirMenuMobile()">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <div id="menu_mobile">
+        <nav class="row">
+            <div class="col-sm-12 links">
+                <a href="#">Potions</a>
+                <a href="#">Ingredients</a>
+                <a href="#">Books</a>
+                <a href="#">Supplies</a>
+                <a href="#">Charms</a>
+                <a href="#" class="destaque">Clearance!</a>
+            </div>
+            <div class="col-xs-12 login">
+                <a href="#">Sign In</a> or
+                <a href="#">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <main>
+        <section>
+            <div class="container font-serifa">
+                <h2>
+                    Potions
+                </h2>
+                <div class="row produtos" id="produtos">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<div class="modal-bg font-serifa" id="modal-bg">
+    <div class="modal row">
+        <div class="fechar_modal">x</div>
+        <div class="col-sm-7">
+            <img id="potionImage" src="">
+        </div>
+        <div class="col-sm-5">
+            <h3 class="potionTitle"></h3>
+            <h4>
+                Use/Effect:
+            </h4>
+            <p class="useeffect"></p>
+            <h4>
+                Ingredients:
+            </h4>
+            <p class="ingredients"></p>
+            <h4 class="no-margin">
+                Price
+            </h4>
+            <p class="price cor-primaria"></p>
+            <button class="btn cor-primaria">
+                Add to cart
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-12 sitemap desktop">
+                        <a href="#">Company</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Carrers</a>
+                    </div>
+                    <div class="col-xs-12 redes-sociais">
+                        <a href="#"><i class="ico ico-social ico-facebook"></i></a>
+                        <a href="#"><i class="ico ico-social ico-twitter"></i></a>
+                        <a href="#"><i class="ico ico-social ico-pinterest"></i></a>
+                        <a href="#"><i class="ico ico-social ico-tumblr"></i></a>
+                        <a href="#"><i class="ico ico-social ico-googleplus"></i></a>
+                    </div>
+                    <div class="col-xs-12 legal desktop">
+                        <p>
+                            <small>© 2015 Merlin's Potions. All Rights Reserved</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-12 newsletter">
+                        <h4>
+                            Sign up for our Newsletter
+                        </h4>
+                        <p>
+                            Sign up for our newsletter & get exclusive discounts!
+                        </p>
+                        <form id="form-newsletter">
+                            <input type="text" placeholder="Enter your e-mail" />
+                            <button class="btn cor-primaria">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 legal text-center mobile">
+                        <p>
+                            <small>© 2015 Merlin's Potions. All Rights Reserved</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Content/assets/js/scripts.js"></script>
+
+</body>

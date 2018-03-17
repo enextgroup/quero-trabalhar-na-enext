@@ -1,0 +1,44 @@
+﻿/*
+|--------------------------------------------------------------------------
+| Index (Home)
+|--------------------------------------------------------------------------
+*/
+
+main {
+    background: #fff;
+    padding: 50px 0;
+    h2 {
+        font-size: 18pt;
+        margin-bottom: 25px;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+    .produto {
+        text-align: center;
+        margin-bottom: 50px;
+        cursor: pointer;
+        @media (max-width: 468px) {
+            margin-bottom: 13px;
+            height: 280px;
+        }
+        img {
+            display: block;
+            max-width: 224px;
+            margin: 20px auto;
+            width: 100%;
+        }
+        .info_geral-produto {
+            @media (max-width: 768px) {
+                padding: 10px 20px;
+            }
+            h3 {
+                display: inline-block;
+                font-size: 12pt;
+            }
+            .price {
+                font-size: 11pt;
+            }
+        }
+    }
+}

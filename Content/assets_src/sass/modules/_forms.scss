@@ -1,0 +1,35 @@
+/*
+|--------------------------------------------------------------------------
+| Formulários
+|--------------------------------------------------------------------------
+*/
+
+#form-pesquisa {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 10px;
+    max-width: 350px;
+    margin-left: 30px;
+    i {
+        margin: 1px 2px;
+        float: left;
+    }
+    input {
+        border: none;
+        margin-left: 5px;
+        width: calc(100% - 50px)
+    }
+}
+
+#form-newsletter {
+    margin-top: 10px;
+    input {
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px 10px;
+        width: calc(100% - 110px)
+    }
+    button {
+        width: 100px;
+    }
+}
