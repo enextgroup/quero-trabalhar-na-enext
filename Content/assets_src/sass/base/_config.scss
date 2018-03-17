@@ -18,24 +18,25 @@ $main-width: 1200px; // Tamanho do Container
 | Cores
 |--------------------------------------------------------------------------
 */
+$branco: #ffffff;
+$preto: #010101;
+$azul: #0000ff;
+$vermelho: #ff0000;
+$amarelo: #fff000;
+
 $bg-color: $branco;
 $text-color: $preto;
 $link-color: $azul;
 $cor-primaria: $vermelho;
 $cor-secundaria: $amarelo;
 
-$braco: #ffffff;
-$preto: #010101;
-$azul: #0000ff;
-$vermelho: #ff0000;
-$amarelo: #fff000;
-
 /*
 |--------------------------------------------------------------------------
 | Fontes
 |--------------------------------------------------------------------------
 */
-$text-font: $sem-serifa;
-$title-font: $serifa;
+
 $sem-serifa: Arial, sans-serif;
 $serifa: Georgia, serif;
+$text-font: $sem-serifa;
+$title-font: $serifa;

@@ -23,8 +23,8 @@ var paths = {
 		'content/assets_src/js/**/*.js'
 	],
 	js : [
-		'content/assets_src/js/vendor/jquery-1.11.0.min.js',
 		'content/assets_src/js/vendor/*.js',
+		'content/assets_src/js/components/*.js',
 		'content/assets_src/js/controller/*.js'
 	],
 	jslint  : ['content/assets_src/js/**/*.js', '!content/assets_src/js/vendor/*.js'],
@@ -54,7 +54,7 @@ gulp.task('lint', function () {
 	return gulp.src(paths.jslint)
 		.pipe($.jshint())
 		.pipe($.jshint.reporter('jshint-stylish'));
-});
+}); 
 
 gulp.task('styles', function () {
 	return gulp.src(paths.styles)
@@ -105,4 +105,8 @@ gulp.task('watch', ['lint', 'scripts', 'styles', 'images', 'extras', 'views'], f
 	gulp.watch(paths.images, ['images']);
 	gulp.watch(paths.extras, ['extras']);
 	gulp.watch(paths.views, ['views']);
+});
+
+gulp.task('default', ['clean'], function () {
+	gulp.start('watch');
 });
