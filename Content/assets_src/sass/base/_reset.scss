@@ -1,0 +1,81 @@
+/*
+|--------------------------------------------------------------------------
+| Resetar css
+|--------------------------------------------------------------------------
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+:focus {
+    outline: 0;
+} 
+
+/*
+|--------------------------------------------------------------------------
+| EMBEDDED CONTENT
+|--------------------------------------------------------------------------
+*/
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FORMS
+|--------------------------------------------------------------------------
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
