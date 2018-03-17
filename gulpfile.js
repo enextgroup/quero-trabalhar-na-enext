@@ -108,7 +108,7 @@ gulp.task('webserver', function() {
   });
 
 
-gulp.task('watch', ['lint', 'scripts', 'styles', 'images', 'extras', 'views'], function(){
+gulp.task('watch', ['lint', 'webserver', 'scripts', 'styles', 'images', 'extras', 'views'], function(){
 	gulp.watch(paths.jslint, ['lint']);
 	gulp.watch(paths.scripts, ['scripts']);
 	gulp.watch(paths.styles, ['styles']);
