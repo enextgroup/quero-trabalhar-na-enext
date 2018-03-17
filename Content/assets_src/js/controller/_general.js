@@ -1,4 +1,4 @@
-﻿/*
+/*
 |--------------------------------------------------------------------------
 | Geral
 |--------------------------------------------------------------------------
@@ -7,7 +7,7 @@
 var resquest = new XMLHttpRequest(),
     jsonProdutos;
     resquest.overrideMimeType('application/json');
-    resquest.open("GET", "http://localhost:8000/Content/assets/js/potions.json", true);
+    resquest.open("GET", "http://localhost:8000/Content/assets_src/js/vendor/potions.json", true);
     resquest.send();
 
     //abrir modal
