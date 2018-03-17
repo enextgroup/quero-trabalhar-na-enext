@@ -1,0 +1,45 @@
+/*
+|--------------------------------------------------------------------------
+| Caminhos
+|--------------------------------------------------------------------------
+*/
+$image-path: '../images/'; // Caminho das imagens
+$font-path: '../fonts/'; // Caminho das fontes
+
+/*
+|--------------------------------------------------------------------------
+| Width Principal
+|--------------------------------------------------------------------------
+*/
+$main-width: 1200px; // Tamanho do Container
+
+/*
+|--------------------------------------------------------------------------
+| Cores
+|--------------------------------------------------------------------------
+*/
+$branco: #ffffff;
+$azul: #0000ff;
+$amarelo: #fff000;
+$roxo-claro: #e6e6e6;
+$pretoa: #010101;
+$preto: #000000;
+$vermelho: #dc381d;
+$roxo-escuro: #533569;
+
+$bg-color: $roxo-claro;
+$text-color: $pretoa;
+$link-color: $preto;
+$cor-primaria: $vermelho;
+$cor-secundaria: $roxo-escuro;
+
+/*
+|--------------------------------------------------------------------------
+| Fontes
+|--------------------------------------------------------------------------
+*/
+
+$sem-serifa: Arial, sans-serif;
+$serifa: Georgia, serif;
+$text-font: $sem-serifa;
+$title-font: $serifa;

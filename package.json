@@ -1,0 +1,40 @@
+{
+		"name": "projetobase",
+		"version": "1.0.0",
+		"author": "",
+		"description": "Packages for Ad.Agency Projetos",
+		"client": "eNext",
+		"job": "eNext",
+		"private": true,
+		"scripts": {
+			"test": "echo \"Error: no test specified\" && exit 1",
+			"gulp": "gulp"
+		},
+		"dependencies": {
+			"flexboxgrid": "^6.3.1"
+		},
+		"devDependencies": {
+			"autoprefixer": "^6.3.6",
+			"browser-sync": "^2.13.0",
+			"css-mqpacker": "^5.0.1",
+			"del": "~2.2.0",
+			"gulp": "^3.9.1",
+			"gulp-concat": "^2.6.0",
+			"gulp-if": "^2.0.2",
+			"gulp-imagemin": "^3.0.1",
+			"gulp-jshint": "^2.0.1",
+			"gulp-load-plugins": "^1.2.4",
+			"gulp-newer": "^1.2.0",
+			"gulp-plumber": "^1.1.0",
+			"gulp-postcss": "^6.1.1",
+			"gulp-sass": "^2.3.2",
+			"gulp-sourcemaps": "^1.6.0",
+			"gulp-uglify": "^1.4.1",
+			"gulp-util": "^3.0.7",
+			"gulp-webserver": "^ 0.9.1",
+			"jshint": "^2.9.2",
+			"jshint-stylish": "^2.2.0",
+			"postcss-flexibility": "^1.0.3",
+			"vinyl-named": "^1.1.0"
+		}
+}

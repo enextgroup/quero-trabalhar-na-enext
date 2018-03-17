@@ -1,0 +1,21 @@
+/*
+|--------------------------------------------------------------------------
+| Botões
+|--------------------------------------------------------------------------
+*/
+
+.btn {
+    border: none;
+    border-radius: 4px;
+    background: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    &.cor-primaria {
+        background: $cor-primaria;
+        color: #fff;
+
+    }
+}

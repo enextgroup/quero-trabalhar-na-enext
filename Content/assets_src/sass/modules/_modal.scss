@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+| Modal
+|--------------------------------------------------------------------------
+*/
+
+.modal-bg {
+    background: rgba(0, 0, 0, .4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+    .modal {
+        background: #fff;
+        width: 100%;
+        max-width: 770px;
+        position: relative;
+        margin: 100px auto;
+        padding: 69px 20px;
+        @media (max-width: 768px) {
+            margin: 0 auto;
+            height: 100vh;
+            overflow: scroll;
+            img {
+                margin-top: 20px;
+            }
+        }
+        h3,
+        h4,
+        p {
+            font-family: $serifa;
+            margin-bottom: 15px;
+        }
+        .fechar_modal {
+            float: right;
+            cursor: pointer;
+            margin-top: -55px;
+            font-size: 19pt;
+        }
+        .btn {
+            width: 155px;
+            margin-top: 20px;
+        }
+    }
+}

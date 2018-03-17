@@ -1,0 +1,33 @@
+/*
+|--------------------------------------------------------------------------
+| Comum
+|--------------------------------------------------------------------------
+*/
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.cor-primaria {
+    color: $cor-primaria;
+}
+.font-serifa {
+    font-family: $serifa;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}

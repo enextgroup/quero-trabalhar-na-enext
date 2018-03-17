@@ -1,0 +1,36 @@
+﻿/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+footer {
+    background: #e6e6e6;
+    padding: 50px 0;
+    .sitemap {
+        margin-bottom: 25px;
+        a {
+            display: inline-block;
+            margin-right: 25px;
+            color: $cor-primaria;
+            text-transform: uppercase;
+            padding: 0 0 5px;
+        }
+    }
+    .redes-sociais {
+        margin-bottom: 12px;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+    .newsletter {
+        background: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        h4 {
+            font-family: $serifa;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+    }
+}
