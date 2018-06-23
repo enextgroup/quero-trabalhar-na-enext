@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+body{
+	font-family: 'Droid Sans';
+	font-size: normal;
+}
+li{ list-style: none; }
+
+
+nav li{
+	display: list-item;
+	text-align: center;
+}
+.box-produto{
+	span.nome{
+		color: #000000;
+	}
+	span.preco{
+		color: #d73a1e;
+	}
+}
+
+
