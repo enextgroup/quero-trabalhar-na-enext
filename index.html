@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Teste e-next</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./assets/css/style.css" >
 	</head>
@@ -103,7 +105,7 @@
 		    </div>
 		</header>
 		<main class="container">
-			<h1>Potions</h1>
+			<h1 class="titulo">Potions</h1>
 		<!--<div class="box-produto">
 				<div class="imagem"></div>
 				<div class="dados">
@@ -158,11 +160,21 @@
 				</div>
 			</div>
 		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<div id="box-lightbox" >
+			<script>
+			function openModal() {
+			  document.getElementById('myModal').style.display = "block";
+			}
+
+			function closeModal() {
+			  document.getElementById('myModal').style.display = "none";
+			}
+			</script>
+	</div>
 		<script src="./assets/js/default.js"></script>
 		<script src="./assets/js/potions.json"></script>
 	</body>
-	<div id="box-lightbox" style="display: none;">
-	</div>
+	
+	<script>
+
 </html>

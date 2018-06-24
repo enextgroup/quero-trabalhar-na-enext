@@ -14,47 +14,36 @@ var arr = Object.keys(vpotions.potions).map(function(k) {
 for (i in arr) {
     
     x += '<div class="box-produto">';
-    x += '  <div class="imagem"><a href="javascript:void(0)" id="produto-'+arr[i].id+'""><img src="./assets/products/'+arr[i].image+'"/></a></div>';
+    x += '  <div class="imagem"><img src="./assets/products/'+arr[i].image+'" onclick="openModal();"/></div>';
     x += '  <div class="dados">';
     x += '    <span class="nome">'+arr[i].name+' - </span>';
     x += '    <span class="preco">'+arr[i].price+'</span>';
     x += '  </div>';
     x += '</div>';
     
-    y += '<div class="lightbox" id="modal-'+arr[i].id+'" role="dialog" aria-hidden="false">';
-    y += '      <div class="imagem"><img src="./assets/products/'+arr[i].image+'" /></div>';
-    y += '      <div class="dados">';
-    y += '        <h3>'+arr[i].name+'</h3>';
-    y += '        <h3>Use/Effect:</h3>'; 
-    y += '        <p>'+arr[i].effect+'</p>'; 
-    y += '        <h3>Ingredients:</h3>'; 
+    y += '<div class="lightbox" id="myModal" style="display: none;">';
+    y += '  <span class="close" onclick="closeModal()">&times;</span>';
+    y += '  <div class="imagem"><img src="./assets/products/'+arr[i].image+'" /></div>';
+    y += '    <div class="dados">';
+    y += '      <h3>'+arr[i].name+'</h3>';
+    y += '      <h3>Use/Effect:</h3>'; 
+    y += '      <p>'+arr[i].effect+'</p>'; 
+    y += '      <h3>Ingredients:</h3>'; 
     for (j in arr[i].ingredients) {
         y += arr[i].ingredients[j] + '<br>';
     }
-    y += '        <h3>Price:</h3>';
-    y += '        <span class="preco">'+arr[i].price+'</span>';y += '</div>';
-    y += '      </div>';
-    y += ' </div>';
+    y += '      <h3 class="preco">Price:</h3>';
+    y += '      <span class="preco">'+arr[i].price+'</span>';
+    y += '      <button class="btn-comprar">Add to cart</button>';
+    y += '    </div>';
+    y += '</div>';
+   
 
-    
-
+      
     
   }
 document.getElementById("produto").innerHTML = x;
 document.getElementById("box-lightbox").innerHTML = y;
-
-
-
-document.getElementById("produto-"+arr[i].id+"").addEventListener("click", displayDate);
-function displayDate() {
-    document.getElementById("box-lightbox").innerHTML = Date();
-}
-
-function modalProduto(){
-  $(".modalProduto").click(function(){
-    $("#box-lightbox").show();
-  })
-}
 //var count = Object.keys(vpotions.potions).length;
 
  /* for (i = 0; i <= arr.length; i++){
@@ -97,7 +86,6 @@ closebtn.addEventListener("click", function(){
   document.getElementsByTagName("body").style.overflow = "scroll";
 })
 */
-
 $(".openbtn").click(function(){
         $('#mySidenav').css({'display':'block', 'width':'100%'});
       $(this).hide();

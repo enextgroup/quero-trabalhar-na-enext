@@ -123,6 +123,9 @@ nav .menu .conta{
 
 /*******************************************/
 main{padding: 15px 0;}
+h1.titulo {
+	font-weight: 600;
+}
 .box-produto{
 	width: 33.33%;
 	float: left;
@@ -150,7 +153,7 @@ span.preco{
 /**** box-lightbox ****/
 #box-lightbox{
 	width: 100%;
-    position: absolute;
+    position: fixed;
     top: 10%;
     display: -webkit-box;	
 }
@@ -186,6 +189,35 @@ span.preco{
 	float: left;
 	padding: 10px
 }
+.lightbox .dados h3.preco{
+	margin-bottom: 0;
+}
+.lightbox .dados span.preco{
+	font-size: 18px;
+	font-weight: 600;
+}
+.btn-comprar{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "Oswald";
+	font-size: 16px;
+	background: #d73a1e;
+	border: 1px solid #da391c;
+	border-radius: 3px;
+	padding: 5px 10px;
+	float: right;
+}
+.close {
+  color: #555555;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  opacity: 1;
+  z-index: 999999;
+}
+
 /*****************************/
 
 footer{
@@ -239,7 +271,7 @@ footer{
 input.input-newsletter {
 	font-family: "Oswald";
 	font-size: 14px;
-    width: 68%;
+    width: 65%;
     height: 36px;
     border-radius: 3px;
     border: 1px solid #555555;
@@ -251,7 +283,7 @@ button.btn.btn-newsletter{
 	font-size: 14px;
 	height: 36px;
 	vertical-align: unset;
-	padding: 0 25px;
+	padding: 0 20px;
 	background: #d73a1e;
 }
 .copyright{
@@ -403,7 +435,7 @@ button.btn.btn-newsletter{
 	.lightbox .dados h3{
 		font-size: 16px;
 		font-weight: 600;
-		margin-top: 0;
+		margin-top: 8px;
 	}
 }
 @media (max-width: 768px){
@@ -415,6 +447,9 @@ button.btn.btn-newsletter{
 	}
 	.faixa-promocao {
 	    display: block;
+	}
+	h1.titulo {
+		text-align: center;
 	}
 	.box-produto{
 		width: 50%;
