@@ -107,16 +107,55 @@ nav .menu .conta{
 /*******************************************/
 main{padding: 15px 0;}
 .box-produto{
-	
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding: 10px 15px;
+}
+.box-produto .imagem{
+	padding: 5px;
+}
+.box-produto .imagem img{
+	max-width: 300px;
+}
+span.nome{
+	color: #000000;
+}
+span.preco{
+	color: #d73a1e;
 }
 
-span.nome{
-		color: #000000;
-	}
-	span.preco{
-		color: #d73a1e;
-	}
 
+/**** box-lightbox ****/
+.lightbox {
+    width: 50%;
+    margin: auto;
+    border: 1px solid;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    background: #ffffff;
+}
+.lightbox .imagem{
+	width: 50%;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 10px;
+}
+.lightbox .imagem img{
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+}
+
+.lightbox .dados{
+	width: 50%;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 10px
+}
 /*****************************/
 
 footer{
