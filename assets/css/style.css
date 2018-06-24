@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 
 body{
-
+	font-family: 'DroidSans';
 }
 li{ 
 	display: list-item;
@@ -24,10 +24,11 @@ li{
 }
 
 input.busca {
+  font-family: 'Oswald';
   height: 34px;
   width: 100%;
   padding: 0 35px; 
-  border: 0.5px solid #444444;
+  border: 0.5px solid #555555;
   border-radius: 3px;
 }
 
@@ -39,15 +40,33 @@ button.btn.btn-buscar {
 
 .nav-top .promocao{
 	color: #d73a1e;
-	font-family: 'DroidSans';
 	font-style: italic;
 	font-size: 14px;
 	text-align: center;
     float: left;
-    padding: 0 10px;
+    padding: 0 15px;
 }
+.nav-top .promocao span{
+	font-family: "Oswald";
+	font-size: 12.5px;
+}
+
+.faixa-promocao {
+	text-align: center;
+	font-size: 18px;
+	background: #e6e6e6;
+	padding: 5px 0;
+	color: #999;
+	font-style: italic;
+	display: none;
+}
+.faixa-promocao span{
+	font-family: "Oswald";
+	font-size: 13px;
+}	
 .nav-top .carrinho{
 	display: table;
+	float: right;
 }
 .nav-top .carrinho a{
 	color: #b3b3b3;
@@ -63,11 +82,9 @@ button.btn.btn-buscar {
 	font-size: 14px;
 	vertical-align: bottom;
 	background: none;
-    font-size: 14px;
 }
 
 .nav-top .caldeirao img{
-	padding: 0 5px;
 	height: 30px;
 	vertical-align: middle;
 }
@@ -109,14 +126,18 @@ main{padding: 15px 0;}
 .box-produto{
 	width: 33.33%;
 	float: left;
+	font-weight: 600;
+	font-size: 16px;
 	text-align: center;
 	padding: 10px 15px;
+
 }
 .box-produto .imagem{
 	padding: 5px;
 }
 .box-produto .imagem img{
 	max-width: 300px;
+	width: 100%;
 }
 span.nome{
 	color: #000000;
@@ -127,14 +148,22 @@ span.preco{
 
 
 /**** box-lightbox ****/
-.lightbox {
-    width: 50%;
-    margin: auto;
-    border: 1px solid;
-    padding: 10px;
+#box-lightbox{
+	width: 100%;
     position: absolute;
     top: 10%;
+    display: -webkit-box;	
+}
+.lightbox {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 10%;
     background: #ffffff;
+    box-shadow: 0 0 6px 0px #777777;
+    -webkit-box-shadow: 0 0 6px 0px #777777;
+    -moz-box-shadow: 0 0 6px 0px #777777;
 }
 .lightbox .imagem{
 	width: 50%;
@@ -142,6 +171,7 @@ span.preco{
 	display: block;
 	float: left;
 	padding: 10px;
+	text-align: center;
 }
 .lightbox .imagem img{
 	max-width: 450px;
@@ -163,11 +193,74 @@ footer{
 	padding: 15px 0;
 
 }
+.info, .redes-sociais{
+	padding: 5px 0;
+}
+.info ul{
+	padding: 0;
+	margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.info ul li{
+	color: #d73a1e;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	text-align: center;
+}
+.redes-sociais ul{
+	padding: 0;
+	margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.redes-sociais ul li{
+	color: #523468;
+	font-size: 36px;
+	text-align: center;
+}
+
 .newsletter{
 	background: #ffffff;
 	padding: 10px;
+	border-radius: 3px;
+}
+.titulonews span:first-child{
+	font-size: 16px;
+	font-style: italic;
+}
+.titulonews span:last-child{
+	font-family: "Oswald";
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 3;
 }
 
+input.input-newsletter {
+	font-family: "Oswald";
+	font-size: 14px;
+    width: 68%;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #555555;
+    padding: 6px 10px;
+}
+button.btn.btn-newsletter{
+	color: #ffffff;
+	font-family: "Oswald";
+	font-size: 14px;
+	height: 36px;
+	vertical-align: unset;
+	padding: 0 25px;
+	background: #d73a1e;
+}
+.copyright{
+	font-family: "Oswald";
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
 /***************Animação do botão - menu mobile***************/
 .btn-mobile {
   border: none;
@@ -197,6 +290,8 @@ footer{
 .closebtn {
   width: 58px;
   height: 38px;
+  position: absolute;
+  z-index: 999999;
 }
 
 .closebtn .icon-bar {
@@ -241,10 +336,91 @@ footer{
     transform: rotate(-45deg);
   }
 }
+
+/***********menu Mobile ************/
+
+.menuMobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: scroll;
+  display: none;
+}
+.box-busca {
+    position: relative;
+    top: 10px;
+    padding: 0 25px;
+    float: right;
+}
+.menuMobile .menu{
+	position: relative;
+    top: 40px;
+    margin: 34px 0;
+    padding: 0;
+    background: #523468;
+    
+}
+.menuMobile .menu li{
+	padding: 10px 35px;
+	margin: 5px 0;
+	background: #523468;
+}
+.menuMobile .menu li.clearence{
+	background: #422a53;
+}
+.menuMobile .menu li a{
+	color: #ffffff;
+	font-size: 18px;
+	font-style: italic;
+	padding: 3px 10px;
+}
+
+
 /***********************RESPONSIVO*********************/
+@media (max-width: 450px){
+	.nav-top .caldeirao img{
+		height: 20px;
+	}
+	#box-lightbox{
+		top: 5%;
+	}
+	.lightbox .imagem{
+		width: 100%;
+	    float: none;
+	}
+	.lightbox .imagem img{
+		max-width: 290px;
+	}
+	.lightbox .dados{
+		width: 100%;
+	}
+	.lightbox .dados h3{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 0;
+	}
+}
 @media (max-width: 768px){
-	footer .info {
-		display: none;
+	.nav-top {
+    	height: 70px;
+	}
+	nav.navbar{ 
+		display: none; 
+	}
+	.faixa-promocao {
+	    display: block;
+	}
+	.box-produto{
+		width: 50%;
+	}
+	.newsletter{
+		margin-bottom: 15px;
 	}
 }
 @media (min-width: 992px){

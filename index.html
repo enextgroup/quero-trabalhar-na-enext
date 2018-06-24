@@ -11,25 +11,25 @@
 		<header>
 			<div class="nav-top container">
 				<div class="visible-xs col-sm-3 col-xs-2">
-					<button class="btn btn-default btn-mobile" id="openbtn">
+					<button class="btn btn-default btn-mobile openbtn" >
 						<span class="icon-bar"></span>
 					    <span class="icon-bar"></span>
 					    <span class="icon-bar"></span>
 					</button>
-					<button class="btn btn-default btn-mobile" id="closebtn" style="display: none;">
+					<button class="btn btn-default btn-mobile closebtn" style="display: none;">
 						<span class="icon-bar"></span>
 					    <span class="icon-bar"></span>
 					    <span class="icon-bar"></span>
 					</button>
 			    </div>
-				<div class="logo col-sm-4 col-md-4 col-lg-4 col-xs-8">
+				<div class="logo col-sm-4 col-md-4 col-lg-3 col-xs-8">
 					<a href="#"><img src="./assets/images/logo.png"/></a>
 			    </div>
-				<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 hidden-xs">
+				<div class="col-sm-4 col-md-4 col-lg-6 col-xs-12 hidden-xs">
 					<button class="btn btn-buscar" type="submit"><i class="fa fa-search"></i></button>
 					<input type="text" class="busca" placeholder="Search our stock" />						    			    
 				</div>
-				<div class="col-sm-4 col-md-4 col-lg-4 col-xs-2">
+				<div class="col-sm-4 col-md-4 col-lg-3 col-xs-2">
 					<div class="promocao hidden-xs">
 						Free shipping<br />
 						<span>on orders over R$50</span>						
@@ -40,6 +40,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="faixa-promocao"> Free shipping <span>on orders over R$50</span></div>
 			<nav class="navbar">
 				<div class="container">
 					<div class="row">
@@ -81,32 +82,16 @@
 			<div id="mySidenav" class="menuMobile" style="display:none;">
 		    	<div class="container">
 					<div class="row">
+						<div class="box-busca col-xs-11 visible-xs">
+							<button class="btn btn-buscar" type="submit"><i class="fa fa-search"></i></button>
+							<input type="text" class="busca" placeholder="Search our stock" />						    			    
+						</div>
 						<ul class="menu dropdown">
-							<li>
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
-									Potions <span class="caret"></span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
-									Ingredients <span class="caret"></span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
-									Books <span class="caret"></span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
-									Suplies <span class="caret"></span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
-									Charms <span class="caret"></span>
-								</a>
-							</li>
+							<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Potions</a>	</li>
+							<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Ingredients</a></li>
+							<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Books</a></li>
+							<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Suplies</a></li>
+							<li><a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">Charms </a></li>
 							<li class="clearence"><a href="" role="button">Clearence</a></li>
 							<ul class="conta">
 								<li><a href="#">Sign In</a> or <a href="#">Sign Up</a></li>
@@ -129,21 +114,39 @@
 			<div id="produto"></div>
 		</main>
 		<footer class="footer">
-			<div class="container">
-				<div class="col-sm-6 col-md-6 col-lg-6 info">
-					<div>
+			<div class="container-fluid">
+				<div class="col-sm-5 col-md-5 col-lg-5 col-xs-12 visible-xs newsletter mobile">
+					<div class="titulonews">
+						<span >Sign up for our Newsletter</span><br />
+						<span>Sign up for our newsletter & get exclusive discounts!</span>
+					</div>
+					<div class="formnews">
+						<input type="text" class="input-newsletter" placeholder="Enter your email" />
+						<button class="btn btn-newsletter" type="submit">Submit</button>
+					</div>
+				</div>
+				<div class="col-sm-7 col-md-7 col-lg-7 col-xs-12 info-rodape">
+					<div class="info">
 						<ul>
 							<li>Company Returns</li>
 							<li>Contact us carrers</li>
 							<li>Shipping</li>
 						</ul>
 					</div>
-					<div class="copyright">
-						
+					<div class="redes-sociais" >
+						<ul>
+							<li><i class="fa fa-facebook-square"></i></li>
+							<li><i class="fa fa-twitter-square"></i></li>
+							<li><i class="fa fa-pinterest-square"></i></li>
+							<li><i class="fa fa-tumblr-square"></i></i></li>
+							<li><i class="fa fa-google-plus-square"></i></li>
+						</ul>
 					</div>
-
+					<div class="copyright">
+						&#169; 2015 Merlin's Potions. All Rights Reserved
+					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6 newsletter">
+				<div class="col-sm-5 col-md-5 col-lg-5 col-xs-12 hidden-xs newsletter">
 					<div class="titulonews">
 						<span >Sign up for our Newsletter</span><br />
 						<span>Sign up for our newsletter & get exclusive discounts!</span>
@@ -160,7 +163,6 @@
 		<script src="./assets/js/default.js"></script>
 		<script src="./assets/js/potions.json"></script>
 	</body>
-	<div id="box-lightbox">
-		
+	<div id="box-lightbox" style="display: none;">
 	</div>
 </html>

@@ -14,16 +14,14 @@ var arr = Object.keys(vpotions.potions).map(function(k) {
 for (i in arr) {
     
     x += '<div class="box-produto">';
-    x += '  <div class="imagem"><a href="#produto-'+arr[i].id+'" class="modalProduto"><img src="./assets/products/'+arr[i].image+'"/></a></div>';
+    x += '  <div class="imagem"><a href="javascript:void(0)" id="produto-'+arr[i].id+'""><img src="./assets/products/'+arr[i].image+'"/></a></div>';
     x += '  <div class="dados">';
-    x += '    <span class="nome">'+arr[i].name+'</span>';
+    x += '    <span class="nome">'+arr[i].name+' - </span>';
     x += '    <span class="preco">'+arr[i].price+'</span>';
     x += '  </div>';
     x += '</div>';
     
-    y += '<div class="lightbox modal" id="modal-'+arr[i].id+'" role="dialog" aria-hidden="false">';
-    y += '  <div class="modal-dialog">';
-    y += '    <div class="modal-content"><button type="button" class="close" data-dismiss="modal">x</button>';
+    y += '<div class="lightbox" id="modal-'+arr[i].id+'" role="dialog" aria-hidden="false">';
     y += '      <div class="imagem"><img src="./assets/products/'+arr[i].image+'" /></div>';
     y += '      <div class="dados">';
     y += '        <h3>'+arr[i].name+'</h3>';
@@ -36,12 +34,10 @@ for (i in arr) {
     y += '        <h3>Price:</h3>';
     y += '        <span class="preco">'+arr[i].price+'</span>';y += '</div>';
     y += '      </div>';
-    y += '    </div>';
-    y += '  </div>';
     y += ' </div>';
 
     
-  }
+
     
   }
 document.getElementById("produto").innerHTML = x;
@@ -49,6 +45,16 @@ document.getElementById("box-lightbox").innerHTML = y;
 
 
 
+document.getElementById("produto-"+arr[i].id+"").addEventListener("click", displayDate);
+function displayDate() {
+    document.getElementById("box-lightbox").innerHTML = Date();
+}
+
+function modalProduto(){
+  $(".modalProduto").click(function(){
+    $("#box-lightbox").show();
+  })
+}
 //var count = Object.keys(vpotions.potions).length;
 
  /* for (i = 0; i <= arr.length; i++){
@@ -72,13 +78,10 @@ var i = "";
   }
 */
 //document.getElementById("teste").innerHTML = "<div>"+id+"</div><div>"+nome+"</div>";
-
-// Pega botão com id "btn"
+/*
 var openbtn = document.querySelector('#openbtn');
 var closebtn = document.querySelector('#closebtn');
-// Atribui evento de click para o btn
 openbtn.addEventListener("click", function(){
-   // Mostra no log, após o click
   document.getElementById("openbtn").style.display = "none";
   document.getElementById("mySidenav").style.display = "block";  
   document.getElementById("mySidenav").style.width = "100%"; 
@@ -87,12 +90,27 @@ openbtn.addEventListener("click", function(){
   console.log("Clicou");
 })
 
-
 closebtn.addEventListener("click", function(){
   document.getElementById("closebtn").style.display = "none";
   document.getElementById("mySidenav").style.display = "none";    
   document.getElementById("openbtn").style.display = "block";
   document.getElementsByTagName("body").style.overflow = "scroll";
 })
+*/
+
+$(".openbtn").click(function(){
+        $('#mySidenav').css({'display':'block', 'width':'100%'});
+      $(this).hide();
+        $(".closebtn").show();
+        $("body").css("overflow","hidden");
+    });
+
+    $(".closebtn").click(function(){
+         $('#mySidenav').hide();
+      $(this).hide();
+        $(".openbtn").show();
+        $("body").css("overflow","visible");
+    });
+
 
 })
