@@ -1,0 +1,482 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+
+body{
+	font-family: 'DroidSans';
+}
+li{ 
+	display: list-item;
+	list-style: none;
+}
+
+/*************************/
+.nav-top{
+  height: 65px;
+  padding: 5px 0;
+}
+.nav-top .logo{
+	text-align: center;
+}
+.nav-top .logo img{
+	width: auto;
+	height: auto;
+}
+
+input.busca {
+  font-family: 'Oswald';
+  height: 34px;
+  width: 100%;
+  padding: 0 35px; 
+  border: 0.5px solid #555555;
+  border-radius: 3px;
+}
+
+button.btn.btn-buscar {
+  color: #d73a1e;
+  background: transparent;
+  position: absolute;
+}
+
+.nav-top .promocao{
+	color: #d73a1e;
+	font-style: italic;
+	font-size: 14px;
+	text-align: center;
+    float: left;
+    padding: 0 15px;
+}
+.nav-top .promocao span{
+	font-family: "Oswald";
+	font-size: 12.5px;
+}
+
+.faixa-promocao {
+	text-align: center;
+	font-size: 18px;
+	background: #e6e6e6;
+	padding: 5px 0;
+	color: #999;
+	font-style: italic;
+	display: none;
+}
+.faixa-promocao span{
+	font-family: "Oswald";
+	font-size: 13px;
+}	
+.nav-top .carrinho{
+	display: table;
+	float: right;
+}
+.nav-top .carrinho a{
+	color: #b3b3b3;
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	text-decoration: none;
+	vertical-align: bottom;
+	text-align: center;
+}
+.nav-top .qtdCarrinho.badge{
+	color: #d73a1e;
+	font-family: 'Oswald';
+	font-size: 14px;
+	vertical-align: bottom;
+	background: none;
+}
+
+.nav-top .caldeirao img{
+	height: 30px;
+	vertical-align: middle;
+}
+
+/*************************************/
+nav.navbar{
+	background: #523468;
+	border-radius: 0;
+	padding: 5px;
+}
+nav ul.menu{
+	position: relative;
+	padding: 0;
+    margin: 0;
+}
+nav .menu li{
+	color: #eeeeee;
+	float: left;
+	padding: 15px 10px;
+	margin: 0 10px;
+}
+nav .menu li a{
+	color: #ffffff;
+	font-family: 'DroidSans';
+	font-style: italic;
+	font-size: 18px;
+	text-align: center;
+}
+nav .menu li.clearence{
+	background: #422a53;
+	border-radius: 3px;
+}
+nav .menu .conta{
+	float: right;
+}
+
+/*******************************************/
+main{padding: 15px 0;}
+h1.titulo {
+	font-weight: 600;
+}
+.box-produto{
+	width: 33.33%;
+	float: left;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 15px;
+
+}
+.box-produto .imagem{
+	padding: 5px;
+}
+.box-produto .imagem img{
+	max-width: 300px;
+	width: 100%;
+}
+span.nome{
+	color: #000000;
+}
+span.preco{
+	color: #d73a1e;
+}
+
+
+/**** box-lightbox ****/
+#box-lightbox{
+	width: 100%;
+    position: fixed;
+    top: 10%;
+    display: -webkit-box;	
+}
+.lightbox {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 10%;
+    background: #ffffff;
+    box-shadow: 0 0 6px 0px #777777;
+    -webkit-box-shadow: 0 0 6px 0px #777777;
+    -moz-box-shadow: 0 0 6px 0px #777777;
+}
+.lightbox .imagem{
+	width: 50%;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+.lightbox .imagem img{
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+}
+
+.lightbox .dados{
+	width: 50%;
+	position: relative;
+	display: block;
+	float: left;
+	padding: 10px
+}
+.lightbox .dados h3.preco{
+	margin-bottom: 0;
+}
+.lightbox .dados span.preco{
+	font-size: 18px;
+	font-weight: 600;
+}
+.btn-comprar{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "Oswald";
+	font-size: 16px;
+	background: #d73a1e;
+	border: 1px solid #da391c;
+	border-radius: 3px;
+	padding: 5px 10px;
+	float: right;
+}
+.close {
+  color: #555555;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  opacity: 1;
+  z-index: 999999;
+}
+
+/*****************************/
+
+footer{
+	background: #e6e6e6;
+	padding: 15px 0;
+
+}
+.info, .redes-sociais{
+	padding: 5px 0;
+}
+.info ul{
+	padding: 0;
+	margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.info ul li{
+	color: #d73a1e;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	text-align: center;
+}
+.redes-sociais ul{
+	padding: 0;
+	margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.redes-sociais ul li{
+	color: #523468;
+	font-size: 36px;
+	text-align: center;
+}
+
+.newsletter{
+	background: #ffffff;
+	padding: 10px;
+	border-radius: 3px;
+}
+.titulonews span:first-child{
+	font-size: 16px;
+	font-style: italic;
+}
+.titulonews span:last-child{
+	font-family: "Oswald";
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 3;
+}
+
+input.input-newsletter {
+	font-family: "Oswald";
+	font-size: 14px;
+    width: 65%;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #555555;
+    padding: 6px 10px;
+}
+button.btn.btn-newsletter{
+	color: #ffffff;
+	font-family: "Oswald";
+	font-size: 14px;
+	height: 36px;
+	vertical-align: unset;
+	padding: 0 20px;
+	background: #d73a1e;
+}
+.copyright{
+	font-family: "Oswald";
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+/***************Animação do botão - menu mobile***************/
+.btn-mobile {
+  border: none;
+  padding: 3px 0;
+  background: none;
+}
+.btn-mobile:hover,.btn-mobile:focus {
+  background: none;
+  outline: none;
+  
+}
+
+
+.icon-bar {
+  opacity: 1;
+  background-color: #011627;
+  height: 2.5px;
+  width: 34px;
+  display: block;
+  margin: 8px 0px;
+  transition: 0.3s opacity;
+  -moz-transition: 0.3s opacity;
+  -webkit-transition: 0.3s opacity;
+  top: 10px;
+}
+
+.closebtn {
+  width: 58px;
+  height: 38px;
+  position: absolute;
+  z-index: 999999;
+}
+
+.closebtn .icon-bar {
+  position: absolute;
+}
+
+.closebtn .icon-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  animation-name: animacao;
+  animation-duration: 0.6s;
+}
+
+.closebtn .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  animation-name: animacao2;
+  animation-duration: 0.6s;
+}
+
+.closebtn .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+@keyframes animacao {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@keyframes animacao2 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/***********menu Mobile ************/
+
+.menuMobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: scroll;
+  display: none;
+}
+.box-busca {
+    position: relative;
+    top: 10px;
+    padding: 0 25px;
+    float: right;
+}
+.menuMobile .menu{
+	position: relative;
+    top: 40px;
+    margin: 34px 0;
+    padding: 0;
+    background: #523468;
+    
+}
+.menuMobile .menu li{
+	padding: 10px 35px;
+	margin: 5px 0;
+	background: #523468;
+}
+.menuMobile .menu li.clearence{
+	background: #422a53;
+}
+.menuMobile .menu li a{
+	color: #ffffff;
+	font-size: 18px;
+	font-style: italic;
+	padding: 3px 10px;
+}
+
+
+/***********************RESPONSIVO*********************/
+@media (max-width: 450px){
+	.nav-top .caldeirao img{
+		height: 20px;
+	}
+	#box-lightbox{
+		top: 5%;
+	}
+	.lightbox .imagem{
+		width: 100%;
+	    float: none;
+	}
+	.lightbox .imagem img{
+		max-width: 290px;
+	}
+	.lightbox .dados{
+		width: 100%;
+	}
+	.lightbox .dados h3{
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 8px;
+	}
+}
+@media (max-width: 768px){
+	.nav-top {
+    	height: 70px;
+	}
+	nav.navbar{ 
+		display: none; 
+	}
+	.faixa-promocao {
+	    display: block;
+	}
+	h1.titulo {
+		text-align: center;
+	}
+	.box-produto{
+		width: 50%;
+	}
+	.newsletter{
+		margin-bottom: 15px;
+	}
+}
+@media (min-width: 992px){
+	nav .menu li {
+	    color: #eeeeee;
+	    float: left;
+	    padding: 15px 10px;
+	    margin: 0 10px;
+	}
+	nav .menu li a{
+		font-size: 17px;
+	}
+}
+@media (max-width: 991px){
+	nav .menu li {
+	    color: #eeeeee;
+	    float: left;
+	    padding: 15px 10px;
+	    margin: 0;
+	}
+	nav .menu li a{
+		font-size: 16px;
+	}
+}
